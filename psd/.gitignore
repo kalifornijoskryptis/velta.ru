@@ -1,0 +1,6 @@
+# JPG preview for customers
+*.jpg
+
+# RAR/ZIP packages for final work
+*.rar
+*.zip
