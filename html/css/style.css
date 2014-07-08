@@ -1,0 +1,321 @@
+/***
+ * Подключение шрифта
+ ***/
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-light-webfont.svg#helveticaneuecyrlight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.svg#helveticaneuecyrroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/***
+ * Сброс стилей
+ ***/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+input {outline: 0;}
+
+
+/***
+ * Основные стили
+ ***/
+
+html {min-width: 1000px; height: 100%;}
+body {
+	width: 100%; height: 100%;
+	font: 300 13px Helvetica, sans-serif;
+	color: #807860;
+	background: #fdfdfd url('../images/bg.png');
+}
+
+h1, .h1 {font-weight: 300; font-size: 28px; line-height: 32px; color: #97875a;}
+
+a {color: #66786d; text-decoration: underline; outline: none;}
+a:hover {text-decoration: none;}
+
+.ajax {text-decoration: none; border-bottom: 1px dotted;}
+.ajax:hover {border-bottom-color: transparent;}
+
+.wrapper {width: 960px; margin: 0 auto;}
+
+
+/***
+ * Шапка
+ ***/
+
+.page-header {}
+.page-header .wrapper {positiuon: relative;}
+/* Логотип */
+.page-header .logo-holder {position: absolute; left: 50%; top: 0; width: 170px; height: 158px; margin-left: -480px; background: #fdfdfd url('../images/bg.png');}
+.page-header .logo-holder .logo {display: block; width: 77px; height: 127px; margin: 15px auto 0; text-indent: -9999px; background: url('../images/logo.png');}
+/* Главное меню */
+.page-header .mainmenu {height: 60px; font-size: 14px; color: #fff; background: #66786d; overflow: hidden;}
+.page-header .mainmenu a {color: inherit;}
+/* Главное меню - Меню */
+.page-header .mainmenu ul {float: left; margin-left: 180px; text-transform: uppercase;}
+.page-header .mainmenu ul li {float: left;}
+.page-header .mainmenu ul li a {display: block; padding: 0 10px; line-height: 60px; text-decoration: none;}
+.page-header .mainmenu ul li.current a,
+.page-header .mainmenu ul li a:hover {color: #d4ca6a; background: #7a8b7c url('../images/mainmenu-cur.png') no-repeat center;}
+/* Главное меню - Перезвоните мне */
+.page-header .mainmenu .callme {float: right; position: relative; text-align: right;}
+.page-header .mainmenu .callme .t {display: inline-block; padding: 0 7px; margin-top: 6px; font-size: 11px; line-height: 14px; background: #7b8e82; border-radius: 2px 2px 0 2px;}
+.page-header .mainmenu .callme .t:after {content: ''; position: absolute; right: 0; top: 100%; width: 0; height: 0; border: 2px solid transparent; border-top-color: #7b8e82; border-right-color: #7b8e82;}
+.page-header .mainmenu .callme .phone {margin-top: 3px; font-size: 14px;}
+/* Пользовательская область */
+.page-header .user-area {height: 98px; padding-left: 170px;}
+.page-header .user-area .search-form {float: left; width: 317px; height: 40px; margin-top: 28px; border: 1px solid #e1e1e1;}
+.page-header .user-area .search-form input {margin: 0; padding: 0; outline: 0; border: 0; background: none;}
+.page-header .user-area .search-form input[type=text] {float: left; margin-left: 20px; width: 250px; height: 16px; margin-top: 12px;}
+.page-header .user-area .search-form input[type=submit] {float: right; width: 40px; height: 40px; background: url('../images/search.png') no-repeat center; cursor: pointer;}
+.page-header .user-area .info {float: right;}
+.page-header .user-area .info .id {margin-top: 13px; font-size: 11px; line-height: 11px; color: #8e8e8e; text-align: right;}
+.page-header .user-area .info .counts {margin-top: 10px; font-size: 12px;}
+.page-header .user-area .info .counts li {float: left; margin-left: 30px; line-height: 21px;}
+.page-header .user-area .info .counts li:first-child {margin-left: 0;}
+.page-header .user-area .info .counts li .icon {display: inline-block; width: 16px; height: 18px; padding-right: 4px; text-indent: -9999px; vertical-align: middle; background: url('../images/userbar-icons.png') no-repeat;}
+.page-header .user-area .info .counts li .icon-fav {background-position: 0 0;}
+.page-header .user-area .info .counts li .icon-cart {background-position: -20px 0;}
+.page-header .user-area .info .counts li .icon-gift {padding-right: 0; vertical-align: top; background-position: -40px -1px;}
+.page-header .user-area .info .counts li a {display: inline-block; padding: 4px 0 2px; color: #97875a; text-decoration: none; text-transform: uppercase; vertical-align: middle;}
+.page-header .user-area .info .counts li a:hover {text-decoration: underline;}
+.page-header .user-area .info .counts li .data {display: inline-block; margin-left: 8px; padding: 0 7px; color: #fff; line-height: 15px; vertical-align: middle; background: #97875a; border-radius: 2px;}
+.page-header .user-area .info .counts li .data .val {float: left; padding: 4px 7px 2px; border-left: 1px solid #a9996c;}
+.page-header .user-area .info .counts li .data .val:first-child {padding-left: 0; border-left: 0;}
+.page-header .user-area .info .counts li .data .val:last-child {padding-right: 0;}
+.page-header .user-area .info .counts li .data .val-gift {padding-right: 20px !important; background: url('../images/gift.png') no-repeat right 2px;}
+
+
+/***
+ * Подвал
+ ***/
+
+.page-footer {margin-top: 45px; font-size: 14px; color: #d2ddd6; background: #66786d;}
+/* Информация */
+.page-footer .information {border-bottom: 1px solid #7a9083; overflow: hidden;}
+.page-footer .information .col {float: left; width: 25%;}
+.page-footer .information .col .col-content {padding: 20px 24px 24px 24px;}
+/*.page-footer .information .col:first-child .col-content {padding-left: 0;}*/
+.page-footer .information .col .t {margin-bottom: 10px; font-size: 28px; color: #fff;}
+.page-footer .information .col:hover {color: #fff; background: #76867c;}
+/* Нижняя часть */
+.page-footer .bottom {padding: 36px 0 25px; overflow: hidden;}
+.page-footer .bottom .col {float: left;}
+.page-footer .bottom .col1 {width: 208px;}
+.page-footer .bottom .col2 {width: 250px;}
+.page-footer .bottom .col3 {width: 192px;}
+.page-footer .bottom .col4 {width: 310px;}
+.page-footer .bottom .col .t {margin-bottom: 15px; font-size: 21px; color: #fff;}
+.page-footer .bottom .col ul li {margin-top: 11px;}
+.page-footer .bottom .col ul li a {color: inherit; text-decoration: none;}
+.page-footer .bottom .col ul li a:hover {text-decoration: underline;}
+.page-footer .bottom .col .address {margin-top: 35px;}
+.page-footer .bottom .col .address:first-child {margin-top: 0;}
+.page-footer .bottom .col .address .map {margin-top: 15px;}
+.page-footer .bottom .col .address .map a {color: #fff; text-decoration: none;}
+.page-footer .bottom .col .address .map a:after {content: ''; display: inline-block; width: 6px; height: 7px; padding-left: 5px; vertical-align: middle; background: url('../images/map.png') no-repeat right center;}
+.page-footer .bottom .col .address .map a span {border-bottom: 1px dotted;}
+.page-footer .bottom .col .address .map a:hover span {border-bottom: 0;}
+
+
+/***
+ * Основной слайдер
+ ***/
+
+.primary-slider {margin-bottom: 32px;}
+/* Меню разделов */
+.primary-slider .catmenu {position: relative; background: #faf9ef; background: rgba(250,249,239,0.95); z-index: 999;}
+.primary-slider .catmenu ul {height: 60px; overflow: hidden;}
+.primary-slider .catmenu ul li {float: left; margin-left: 10px; padding: 22px 0 23px; font-size: 13px; text-transform: uppercase;}
+.primary-slider .catmenu ul li:first-child {margin-left: 0;}
+.primary-slider .catmenu ul li a {display: block; line-height: 15px; color: #66786d; text-decoration: none;}
+.primary-slider .catmenu ul li a:hover {text-decoration: underline;}
+/* Галерея */
+.primary-slider .gallery {position: relative; height: 534px; margin-top: -60px; overflow: hidden;}
+.primary-slider .gallery .slides {}
+.primary-slider .gallery .slides .slide {float: left; position: relative;}
+.primary-slider .gallery .slides .slide img {display: block; width: 960px; height: 534px;}
+.primary-slider .gallery .slides .slide .legend {position: absolute; right: 99px; top: 207px;}
+.primary-slider .gallery .slides .slide .legend .bg {background-color: #000; background-color: rgba(0,0,0,0.8);}
+.primary-slider .gallery .slides .slide .legend .content {max-width: 330px;}
+.primary-slider .gallery .slides .slide .legend .caption {padding: 8px 10px; font-size: 24px; line-height: 28px;}
+.primary-slider .gallery .slides .slide .legend .caption .title {color: #edddb1;}
+.primary-slider .gallery .slides .slide .legend .caption .price {color: #cdc82a;}
+.primary-slider .gallery .slides .slide .legend .caption .price s {color: #4c4c3f;}
+.primary-slider .gallery .slides .slide .legend .desc {margin-top: 1px; padding: 8px 10px; font-size: 11px; color: #b9b19b;}
+.primary-slider .gallery .slides .slide .legend .cart {float: right; margin-top: 1px; padding: 0 14px 0 55px; font-size: 21px; color: #cdc82a; line-height: 47px; text-decoration: none; background-image: url('../images/slider-to-cart.png'); background-repeat: no-repeat; background-position: 14px center;}
+.primary-slider .gallery .slides .slide .legend .cart span {border-bottom: 1px dotted;}
+.primary-slider .gallery .slides .slide .legend .cart:hover span {border-bottom: 0;}
+.primary-slider .gallery .pages {position: absolute; left: 0; bottom: 17px; width: 100%; height: 17px; text-align: center;}
+.primary-slider .gallery .pages a {display: inline-block; width: 15px; height: 15px; margin: 0 1px; text-align: left; text-indent: -9999px; border: 1px solid #c5c02a; border-radius: 2px;}
+.primary-slider .gallery .pages a.selected {background: #c5c02a;}
+.primary-slider .gallery .nav {position: absolute; top: 0; width: 50px; width: 100%; height: 100%; /*background: url('../images/slider-nav.png') no-repeat 0 217px;*/ background-color: rgba(255,255,255,0.1); background-repeat: no-repeat;}
+.primary-slider .gallery .nav:hover {background-color: rgba(255,255,255,0.2);}
+.primary-slider .gallery .nav-prev {right: 50%; margin-right: 430px; background-position: right 277px;}
+.primary-slider .gallery .nav-next {left: 50%; margin-left: 430px; background-position: left 277px;}
+.primary-slider .gallery .nav-prev:hover {background-position: right 277px;}
+.primary-slider .gallery .nav-next:hover {background-position: left 277px;}
+.primary-slider .gallery .nav-prev:active {background-position: right 278px;}
+.primary-slider .gallery .nav-next:active {background-position: left 278px;}
+.primary-slider .gallery .nav-prev {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2OWJjNTRhMi00Y2JlLWRjNGEtODYwZC00ZjBiNjRhNWQ2YzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUU1NUQ5OTdGM0FCMTFFMzkxM0JEMDM3RTFCNjJCOTEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUU1NUQ5OTZGM0FCMTFFMzkxM0JEMDM3RTFCNjJCOTEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkE2REJCNThGRjNBQTExRTNBNjcyREMxQUMxQjExMEZCIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkE2REJCNTkwRjNBQTExRTNBNjcyREMxQUMxQjExMEZCIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+HAPMrwAAAq1JREFUeNrcmdtOFEEQhnvHs66bxSygQe+N8VZfhKfQKMTzuqIigi4qeCLgE/gyeqXGeK9GUQIbz+Jh/Sv8lVQ6ozEz07OtnXwZQiUzfPR0T1V1pdvtuh6NCpgDj8G9vDdLeiwhYx4cznvD9T2SuMufj4AF8Ij/1Ll/RUQkbvN6FMh7/QTs51Vk7mS6cYlrRCXWgVHw3YvvBU/BQfAw1jUiEjf/ILEbjIBzWSTKFJkFG8CxFIkh0AIvwNWY14jMxCZKrHqxXZyFl+BKzNvvrJH4miJxHrwCUzF/R26AzeB4isSgkbhcxMOSgBJbwUnwxYsNgItgsSiJUCLXjMQnL9YPxsEbcKnIhxYtMg2q4HSKRIN//FvKuFhF2mA7OAM+eLEdYAIs8bVysYrI1lkDTfA+RWISLIMLoXaWpCCJOj9q77xY3UiMhdzn84pMGomOF6tRshNaIq/IBF+bsd9ItDlDrTJyoCSHRIPv/LIXqxqJZlmpdRaRcSOxlBI/xF2rNImsIslfxH+WXXZmEdGZ0DXijwWzRqIWcWZtyK7V58V0bdTypuZl7VqyW60wBa+nyLT4+6nYRRyLoo75stvRYbyPMxe1iDNf9HaKzApnTnOtqEUc14TKVL2Y5liNolP3UNlvk98PqUe2eTHNevtDpPAh6hGpQz6C6yyu7NA6ZCBEKh+iQjzFokrK3S1eTCvDwaJT+lA1u5S5n8EMGxB2LHLh72QDImoRGSfYeNCWkB2v2XjQvlbUIs60gtJktJ81VESqX0bLVGRWKbPRi2mHUXq/Z2MX6VLmm1trn/ptWu357mHjIloRlZG26Q+3drTgyzwHt8AwOBCziMqMGhn77H3gGbgPHsQuYmXkKsdvcm6ip1UjnJVMo9KjU117GCqlsZwlzue64f9yPP1LgAEALhOjfBaGYmUAAAAASUVORK5CYII=);}
+.primary-slider .gallery .nav-next {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2OWJjNTRhMi00Y2JlLWRjNGEtODYwZC00ZjBiNjRhNWQ2YzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkEwNzdEOERGM0FCMTFFMzk4MENERUM4RjQ4M0UyNjQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkEwNzdEOENGM0FCMTFFMzk4MENERUM4RjQ4M0UyNjQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkIwRjA2QzU4RjNBQTExRTM5MzRGQURERTM0Q0QwMDg1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkIwRjA2QzU5RjNBQTExRTM5MzRGQURERTM0Q0QwMDg1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hGAOkQAAAqNJREFUeNrUmetOE0EUx6dLFS+VFIO3qC9A1JfxKw8gBCR4RaiIWBQVb0jwDXwggonf1ShKaoN4w0v9n/R/4mQyn3bb3dOT/JJmT3azv87O7J4zpVar5TLEBXAWjINMF8oaSYZzx8Aaf6+CUi+KjPPmz/G3xPMiZdKIXAQr4AzY4CM1QYlnRcmUUsyRv2AYvA6OlynyB0zmPWfSjMgsR+VUcPw3BfrAk7xHJo3IPfAWzICTEZkpsAc87oXJfhe84+icCHK74BLo58iYX34XwXtwMyLzkyPTn9fIJBnPv+PJHIvIyMjsA8vWRVRmE9wCR4PcD3AFHOi2TNKh69wGH8E8OBLkvnkyD6yLOEp8otRQROYaqID71kUcH68tsAAOB7kdcB0cAkvWRSTmQAPUIzJfwDQY4BJuWkSi5slUg9w2X6bVTsokXVxIRKbJmx0Ick1Ppm5dxPFmtzknYjI1Pn4L1kUc54TKVIJcg3NqKKtMHiIqI6vWaCS35cnMWxfROibp1v3kJaJz5EUkp3NER8asiK5aOlf8GOSq1cgikYfIIpfYmYhElfnPXL3Mrlp1/uOzXGr90Dd7k3mz7xH91qrxHw8llrw3vNk3u3796jeXHxVPYtryt5bWI/oV7MdB1iM7nZbotIhWiFqX+CFF1UPwlXWJ2XpkjjW7Vop+7GeZK8XVVcsVojQejnOCbwY5aTw8At9Z7pqt2bWvJQ2ID0FOW0HSgLhsuYuinUbtb8UktCXkrIrccO3er3Yc/dhLid28JNKKSAPhtPvfA/ZDOvLSJv1Fidw68uUU55wHI+BN5Fq6rTDlemBb4aVr740MB9cpbG8k7Yg8de3tA9mtkq23V6697dYqSiKtiMQqK751r1iacAXu7JYznLtGGRPb0/8EGADeJ6BFH+bntQAAAABJRU5ErkJggg==);}
+.primary-slider .gallery .nav-prev:hover {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2OWJjNTRhMi00Y2JlLWRjNGEtODYwZC00ZjBiNjRhNWQ2YzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTdEMjk0NEVGM0FCMTFFMzkzNkZCNDI4OURFMUQ0RkMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTdEMjk0NERGM0FCMTFFMzkzNkZCNDI4OURFMUQ0RkMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkMyMTFFNUJGRjNBQTExRTNCODIxQ0U0M0RFNjA3NUQxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkMyMTFFNUMwRjNBQTExRTNCODIxQ0U0M0RFNjA3NUQxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+O4TfgAAAAS1JREFUeNrs2e8KgjAQAPDWM9VLRUTfwqRSUTH7ixj0Xr2Pa6MvBVGn3m7b1cF9dONHunZ3Qko5sBRCZa3ypvLaezUNsZBC5UU+olE56bumLUQtX0Njpj5BNKKS70NjZj5APiGeMSOXIRpxlt8jcP0XOQEQS9e/EQgidP3UOgIQK4y9TCL2VAiTEAhig7mnCUQJQETY+2IjtgBEbOItwFysACASU98k1kI5AJGaPCFZIDAgKQCRU9we+jycABAF1aWUBaIrJAIgSuqCbdihOoY805B3AH751XLuxMI4fjMAJvMBwuYP0Yl7lo1LY+wDxFotYqqw2lFXh7ZL3bUPEJ0HDs2HNu2g0AcISZeRCiKAmMB1SJsm9oLLWEHHmMOgZ/4fvXEZhgou4+m7AAMAbkLZNZV4BFIAAAAASUVORK5CYII=);}
+.primary-slider .gallery .nav-next:hover {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAoCAYAAAC8cqlMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2OWJjNTRhMi00Y2JlLWRjNGEtODYwZC00ZjBiNjRhNWQ2YzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjQyOTU0NEVGM0FCMTFFM0E3REFCOENGQzJCQURDNkEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjQyOTU0NERGM0FCMTFFM0E3REFCOENGQzJCQURDNkEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkNBREE4RkFDRjNBQTExRTNCQjA4QkFGNDUxMjgyQzVEIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkNBREE4RkFERjNBQTExRTNCQjA4QkFGNDUxMjgyQzVEIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+PIBgHwAAATFJREFUeNrs2d0KgjAUB3AnvU539U4hEt2FRaWiUvZJ2Ou6NlAoiDxserazOvC/EDqDH5V6NsY59zRrJjIWCUW0F1OtkWZ/IFKJsObaHEZ+I4oJRWr+XpUI01hTOaqN8w+Itu4mMCpNky8IYxjVxoh31w0To9O8AmCuFCAya1swfSyyAWAuFCBQzIkCRGZnEtP3gjEAU1KAyCQAzIECRCYFYPYUIDIZAFNQgKBiMJ66BQCTUYB4zf+hq1IKkMEx2ANQCcDEKmv7yANpDfiMjz3q/uRPa/A7FwYiByDy/wMRAYL6vjUUInHhpdHITNI3AjIlHm0frLYujLqQzYez7ZsPkL0t67eDrNlt1GmOgAhmM2Tpwib2FIAgc6ywcOGgx6mjtzbBC+ZhCiHDXDmefgowAPz5QzwjBAo7AAAAAElFTkSuQmCC);}
+
+
+/***
+ * Преимущества
+ ***/
+
+.advantages {margin-bottom: 30px;}
+.advantages .items {margin: 0 0 0 -15px; overflow: hidden;}
+.advantages .items .item {float: left; width: 310px; margin-left: 15px;}
+.advantages .items .item .icon {float: left; width: 128px; height: 128px; text-indent: -9999px; background: url('../images/advantages-icons.png') no-repeat;}
+.advantages .items .item .content {float: left; width: 170px; margin-left: 12px;}
+.advantages .items .item .content .text {display: table-cell; width: 170px; height: 128px; vertical-align: middle;}
+.advantages .items .item .content .text .t {margin-bottom: 10px; font-weight: normal; font-size: 18px;}
+.advantages .items .item1 .icon {background-position: 0 0;}
+.advantages .items .item1 .content .text {color: #366673;}
+.advantages .items .item1 .content .text .t {color: #72acae;}
+.advantages .items .item2 .icon {background-position: -130px 0;}
+.advantages .items .item2 .content .text {color: #626913;}
+.advantages .items .item2 .content .text .t {color: #a6b12e;}
+.advantages .items .item3 .icon {background-position: -260px 0;}
+.advantages .items .item3 .content .text {color: #91691a;}
+.advantages .items .item3 .content .text .t {color: #eeb424;}
+
+
+/***
+ * Лучшие предложения
+ ***/
+
+.best-deals {margin-bottom: 25px; padding: 25px 0; background: #fff;}
+.best-deals .menu {margin-top: 10px; padding-bottom: 6px; font-size: 18px; color: #66786d; text-align: center; overflow: hidden;}
+.best-deals .menu ul {float: left; position: relative; left: 50%;}
+.best-deals .menu ul li {float: left; position: relative; right: 50%; margin: 0 12px;}
+.best-deals .menu ul li a {display: block; line-height: 35px; text-decoration: none;}
+.best-deals .menu ul li a span {border-bottom: 1px dotted;}
+.best-deals .menu ul li a:hover span {border-bottom: 0;}
+.best-deals .menu ul li.current {margin: 0;}
+.best-deals .menu ul li.current a {position: relative; padding: 0 12px; color: #fff; background: #97875a; border-radius: 3px;}
+.best-deals .menu ul li.current a span {border: 0;}
+.best-deals .menu ul li.current a:after {content: ''; position: absolute; left: 50%; top: 100%; width: 0; height: 0; margin-left: -2px; border: 6px solid transparent; border-top-color: #97875a; border-left-width: 3px; border-right-width: 3px;}
+.best-deals .holder {width: 960px; margin: 9px auto 0; padding: 0 0 20px 0; border: 1px solid #dbd2ba; border-radius: 2px;}
+.best-deals .holder .gallery {position: relative;}
+.best-deals .holder .gallery-container {heigh: 437px;}
+.best-deals .holder .carousel {}
+.best-deals .holder .carousel li {float: left; width: 300px; padding: 20px 10px 0; font-size: 18px; line-height: 20px; text-align: center;}
+.best-deals .holder .carousel li .photo {display: block; width: 300px; height: 300px;}
+.best-deals .holder .carousel li .title {margin-top: 30px; color: #66786d; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.best-deals .holder .carousel li .price {margin-top: 3px; color: #97875a;}
+.best-deals .holder .carousel li .price s {color: #b7b7b7;}
+.best-deals .holder .carousel li .cart {margin-top: 15px; color: #97875a;}
+.best-deals .holder .carousel li .cart a {display: inline-block; padding-left: 40px; line-height: 25px; color: #97875a; text-decoration: none; background: url('../images/best-to-cart.png') no-repeat left center;}
+.best-deals .holder .carousel li .cart a span {border-bottom: 1px dotted;}
+.best-deals .holder .carousel li .cart a:hover span {border-bottom: 0;}
+.best-deals .holder .gallery .nav {position: absolute; top: 192px; width: 51px; height: 51px; background: url('../images/carousel-nav.png') no-repeat;}
+.best-deals .holder .gallery .nav-prev {left: 0; background-position: 0 0;}
+.best-deals .holder .gallery .nav-next {right: 0; background-position: -55px 0;}
+.best-deals .holder .gallery .nav-prev:hover {background-position: -110px 0;}
+.best-deals .holder .gallery .nav-next:hover {background-position: -165px 0;}
+.best-deals .holder .gallery .nav-prev:active {margin-top: 1px; background-position: -110px 0;}
+.best-deals .holder .gallery .nav-next:active {margin-top: 1px; background-position: -165px 0;}
+.best-deals .holder .summary {margin-top: 32px; font-size: 18px; color: #66786d; text-align: center;}
+.best-deals .holder .summary .more {text-decoration: none;}
+.best-deals .holder .summary .more span {border-bottom: 1px dotted;}
+.best-deals .holder .summary .more:hover span {border-bottom: 0;}
+
+
+/***
+ * Отзывы
+ ***/
+
+.reviews {margin-bottom: 25px;}
+.reviews .items {margin: 0 0 0 -15px; overflow: hidden;}
+.reviews .items .item {float: left; width: 310px; margin-left: 15px; background; #fff;}
+.reviews .items .item .content {padding: 22px; color: #807860;}
+.reviews .items .item .name {margin-bottom: 15px; font-size: 18px; color: #66786d;}
+.reviews .op {margin-top: 20px; font-size: 18px; text-align: center;}
+.reviews .op a {margin: 0 20px; text-decoration: none;}
+.reviews .op a span {border-bottom: 1px dotted;}
+.reviews .op a:hover span {border-bottom: 0;}
+
+
+/***
+ * Виджеты сайтов
+ ***/
+
+.external-widgets {margin-bottom: 60px;}
+.external-widgets .col-left {float: left; width: 660px;}
+.external-widgets .col-right {float: left; width: 290px; margin-left: 10px;}
+.external-widgets .item {margin-top: 10px;}
+.external-widgets .item:first-child {margin-top: 0;}
+
+
+/***
+ * Партнеры
+ ***/
+
+.partners {}
+.partners .gallery {position: relative; width: 858px; margin: 0 auto;}
+.partners .gallery ul {height: 55px; overflow: hidden;}
+.partners .gallery ul li {float: left; margin: 0 10px;}
+.partners .gallery ul li img {display: block; height: 55px;}.partners .gallery .nav {position: absolute; top: 2px; width: 51px; height: 51px; background: url('../images/carousel-nav.png') no-repeat;}
+.partners .gallery .nav-prev {left: -51px; background-position: 0 0;}
+.partners .gallery .nav-next {right: -52px; background-position: -55px 0;}
+.partners .gallery .nav-prev:hover {background-position: -110px 0;}
+.partners .gallery .nav-next:hover {background-position: -165px 0;}
+.partners .gallery .nav-prev:active {margin-top: 1px; background-position: -110px 0;}
+.partners .gallery .nav-next:active {margin-top: 1px; background-position: -165px 0;}
+
+
+
+
+/***
+ * Вспомогательные стили
+ ***/
+
+.hidden {display: none;}
+.clear {clear: both;}
+
