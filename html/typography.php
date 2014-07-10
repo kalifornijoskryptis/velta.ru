@@ -173,7 +173,7 @@ isBrowserIE = true;
 		<h2>Фотография в тексте</h2>
 		<p>Пример фотографии в тексте, которая может демонстрировать красивый интерьер с заданной шириной в СSS:</p>
 		<figure>
-			<img src="images/content/interior.jpg" alt="Интерьер">
+			<img src="content/interior.jpg" alt="Интерьер">
 			<figcaption><p>Новая коллекция нашей мебели</p></figcaption>
 		</figure>
 	</div>
