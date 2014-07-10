@@ -81,6 +81,48 @@ a:hover {text-decoration: none;}
 
 
 /***
+ * Стили контента (typography.php)
+ ***/
+.content .block { margin-bottom: 40px; }
+
+/* Headers and text */
+.content h1 { font-weight: 300; font-size: 28px; color: #97875a; margin-bottom: 20px; }
+.content h2 { font-weight: 300; font-size: 24px; color: #837c76; margin-top: 20px; margin-bottom: 10px;  }
+.content h3 { font-weight: 300; font-size: 18px; color: #66786d; margin-top: 20px; }
+.content p { margin-bottom: 10px; }
+
+/* Quote and hl */
+.content p.hl { background: #beb801; color: #fff; font-size: 16px; padding: 15px; }
+.content .quote { margin: 10px 0px 35px 90px; background: #fff; padding: 15px; -webkit-border-radius: 10px 10px 0px 50px; border-radius: 10px 10px 0px 50px; -webkit-box-shadow: 0 5px 0 0 #f6f6f6; box-shadow: 0 5px 0 0 #f6f6f6; }
+.content .quote:after { content:url('../images/quote-end.png'); position: absolute; margin-top: 15px; margin-left: 823px; }
+.content .quote p { margin: 10px; color: #896d20; line-height: 21px; font-size: 16px; text-align: right; }
+.content .quote q { quotes: "«" "»"; font-style: italic; }
+.content .quote q:before { content: open-quote; }
+.content .quote q:after { content: close-quote; }
+
+/* Lists */
+.content ul { text-indent: 25px; margin-bottom: 20px; }
+.content ol { margin-left: 30px; margin-bottom: 20px; text-indent: 10px; list-style: decimal; }
+.content ul li:before { content: "—"; position: relative; left: -15px; }
+.content ul li,
+.content ol li { color: #837c76; }
+
+/* Table */
+.content table { width:100%; }
+.content th { height: 45px; background: #7b8e82; text-align: left; vertical-align: middle; }
+.content th p { margin: 0 0 0 15px; font-weight: normal; color:#fff; text-transform: uppercase; }
+.content tr { height: 45px; background: #f4f4f4; border-bottom: 1px solid #fff; }
+.content tr:hover { background: #fff; }
+.content td p { margin: 0 0 0 15px; }
+.content td { text-align: left; vertical-align: middle; }
+
+/* Images */
+.content figure img { max-width: 100%; -webkit-border-radius: 5px 5px 0px 0px; border-radius: 5px 5px 0px 0px; }
+.content figure figcaption { background: #fff; height: 45px; -webkit-border-radius: 0px 0px 5px 5px; border-radius: 0px 0px 5px 5px; -webkit-box-shadow: 0 5px 0 0 #f6f6f6; box-shadow: 0 5px 0 0 #f6f6f6; margin-top: -3px; }
+.content figure figcaption p { color: #939393; font-style: italic; font-size: 16px; padding: 12px; }
+
+
+/***
  * Шапка
  ***/
 
