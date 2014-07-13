@@ -122,8 +122,6 @@ jQuery(document).ready(function($){	alignCatMenu();
 		$car.trigger('destroy');	});
 })
 
-
-
-
 $(window).load(function(){	alignCatMenu();
-	alignReviewsHeight()});
+	alignReviewsHeight()});
+

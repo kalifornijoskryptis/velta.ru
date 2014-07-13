@@ -85,13 +85,13 @@ a:hover {text-decoration: none;}
  ***/
 .content .block { margin-bottom: 40px; }
 
-/* Headers and text */
+/* Заголовки и текст */
 .content h1 { font-weight: 300; font-size: 28px; color: #97875a; margin-bottom: 20px; }
 .content h2 { font-weight: 300; font-size: 24px; color: #837c76; margin-top: 20px; margin-bottom: 10px;  }
 .content h3 { font-weight: 300; font-size: 18px; color: #66786d; margin-top: 20px; }
 .content p { margin-bottom: 10px; }
 
-/* Quote and hl */
+/* Цитаты и подсветка важного текста */
 .content p.hl { background: #beb801; color: #fff; font-size: 16px; padding: 15px; }
 .content .quote { margin: 10px 0px 35px 90px; background: #fff; padding: 15px; -webkit-border-radius: 10px 10px 0px 50px; border-radius: 10px 10px 0px 50px; -webkit-box-shadow: 0 5px 0 0 #f6f6f6; box-shadow: 0 5px 0 0 #f6f6f6; }
 .content .quote:after { content:url('../images/quote-end.png'); position: absolute; margin-top: 15px; margin-left: 823px; }
@@ -100,14 +100,14 @@ a:hover {text-decoration: none;}
 .content .quote q:before { content: open-quote; }
 .content .quote q:after { content: close-quote; }
 
-/* Lists */
+/* Списки */
 .content ul { text-indent: 25px; margin-bottom: 20px; }
 .content ol { margin-left: 30px; margin-bottom: 20px; text-indent: 10px; list-style: decimal; }
 .content ul li:before { content: "—"; position: relative; left: -15px; }
 .content ul li,
 .content ol li { color: #837c76; }
 
-/* Table */
+/* Таблицы */
 .content table { width:100%; }
 .content th { height: 45px; background: #7b8e82; text-align: left; vertical-align: middle; }
 .content th p { margin: 0 0 0 15px; font-weight: normal; color:#fff; text-transform: uppercase; }
@@ -116,16 +116,74 @@ a:hover {text-decoration: none;}
 .content td p { margin: 0 0 0 15px; }
 .content td { text-align: left; vertical-align: middle; }
 
-/* Images */
+/* Изображения */
 .content figure img { max-width: 100%; -webkit-border-radius: 5px 5px 0px 0px; border-radius: 5px 5px 0px 0px; }
 .content figure figcaption { background: #fff; height: 45px; -webkit-border-radius: 0px 0px 5px 5px; border-radius: 0px 0px 5px 5px; -webkit-box-shadow: 0 5px 0 0 #f6f6f6; box-shadow: 0 5px 0 0 #f6f6f6; margin-top: -3px; }
 .content figure figcaption p { color: #939393; font-style: italic; font-size: 16px; padding: 12px; }
 
 
 /***
+* Слайдер HTML-содержимого 
+* глобальный для всего сайта
+***/
+.no-js .liquid-slider { height: 350px; overflow: scroll; }
+.ls-preloader { background: url('../images/loading.gif') #f2f2f2 no-repeat center 50%; opacity:1; width:100%; height:100%; position:absolute; top:0; left:0; z-index:2; }
+.ls-wrapper { margin-bottom: 20px; clear: both; overflow: auto; position: relative; }
+.liquid-slider { background: #fff; border: 1px solid #dbd2b9; width: 99%; margin: 0 auto; float: left; overflow: hidden; position: relative; -webkit-border-radius: 5px; border-radius: 5px; }
+.arrows .liquid-slider { margin: 0 10px; }
+.ls-responsive .liquid-slider { width: 99%; margin: 0; }
+.panel-container { position: relative; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }
+.liquid-slider .panel-container .fade { width:100%; opacity: 0; position: absolute; top: 0; left: 0; display: block; }
+.liquid-slider .panel { width: 100%; display: block; float: left; }
+.panel-wrapper {  padding: 15px 50px; position:relative; }
+.panel-wrapper  h3.title { margin: 10px 0px 20px 0px; color: #97875a; }
+.ls-nav { overflow: hidden; clear: both; }
+.ls-nav a { background: none; color: #66786d; font-size:18px; padding: 10px 25px 10px 0; outline:0; }
+.ls-nav a:hover { background: none; color: #333333; text-shadow: none; }
+.ls-nav .current a { background: #97875a; color: #fff; font-size: 18px; -webkit-border-radius: 3px; border-radius: 3px; margin-bottom: 15px; }
+.ls-nav .current a:before { content: " . "; background: url('../images/tab-bottom-arrow.png') no-repeat; width: 7px; height: 6px; position: relative; top: 30px; left: 40%; }
+.currentCrossLink { font-weight: bold; }
+.ls-nav ul { padding:0; clear: both; display: block; margin: auto; overflow: hidden; }
+.ls-nav ul li:before { content: none; }
+.ls-nav ul li { display: inline; }
+.ls-nav ul li a { display: block; float: left; text-decoration: none; }
+
+/*** Мобильная версия слайдера ***/
+.ls-select-box { width: 99%; height: 35px; overflow: hidden; background: url('../images/menu.png') no-repeat right #ddd; -webkit-border-radius: 3px; border-radius: 3px; margin-bottom: 5px; }
+.ls-select-box select { width: 100%; -webkit-appearance: none; -moz-appearance: none; appearance:none; background: transparent; padding: 5px; font-size: 110%; border: none;height: 35px; cursor:pointer; outline: 0; }
+
+/*** Стрелки (текстовые) ***/
+.ls-nav-left, .ls-nav-right { top:0; float: left; clear:both; }
+.ls-nav-left a, .ls-nav-right a { background: #000; color: #fff; padding: 5px; width: 100px; display: block; text-align: center; text-decoration: none; }
+.ls-responsive .ls-nav-left { position: absolute; left: 0; z-index: 2; }
+.ls-responsive .ls-nav-left a { background: #9A9A9A; width: 80px; }
+.ls-responsive .ls-nav-left a:hover { background: #747474; }
+.ls-responsive .ls-nav-right { position: absolute; right: 0; z-index: 2; }
+.ls-responsive .ls-nav-right a { background: #9A9A9A; width: 80px; }
+.ls-responsive .ls-nav-right a:hover { background: #747474; }
+
+/*** Стрелки (графические) ***/
+.ls-nav-left-arrow, .ls-nav-right-arrow { cursor: pointer; float: left; clear: both; }
+.ls-nav-left-arrow a, .ls-nav-right-arrow a { display: block; }
+[class$="-arrow"] { width: 25px; height: 25px; background-image: url('../images/arrow.png'); background-repeat: no-repeat; margin-top: 50px; position:relative; }
+.ls-nav-right-arrow { background-position: top right; margin-right: 5px; }
+.ls-nav-left-arrow { background-position: top left; margin-left: 5px; }
+.ls-nav-left-arrow:hover { background-position: bottom left; }
+.ls-nav-right-arrow:hover { background-position: bottom right; }
+.ls-responsive .ls-nav-left-arrow { position: absolute; left: 0; z-index: 2; }
+.ls-responsive .ls-nav-right-arrow { position: absolute; right: 0; z-index: 2; }
+
+/***
+ * Стили страницы салонов(shop-map.php)
+ ***/
+ 
+#ymaps-overview { margin-bottom: 20px; width: 100%; height: 450px; }
+
+
+/***
  * Шапка
  ***/
-
+ 
 .page-header {}
 .page-header .wrapper {positiuon: relative;}
 /* Логотип */
@@ -174,6 +232,7 @@ a:hover {text-decoration: none;}
  ***/
 
 .page-footer {margin-top: 45px; font-size: 14px; color: #d2ddd6; background: #66786d;}
+.page-footer a { color: #fff; }
 /* Информация */
 .page-footer .information {border-bottom: 1px solid #7a9083; overflow: hidden;}
 .page-footer .information .col {float: left; width: 25%;}
@@ -189,8 +248,9 @@ a:hover {text-decoration: none;}
 .page-footer .bottom .col3 {width: 192px;}
 .page-footer .bottom .col4 {width: 310px;}
 .page-footer .bottom .col .t {margin-bottom: 15px; font-size: 21px; color: #fff;}
-.page-footer .bottom .col ul li {margin-top: 11px;}
-.page-footer .bottom .col ul li a {color: inherit; text-decoration: none;}
+.page-footer .bottom .col ul li {margin-top: 11px; }
+.page-footer .bottom .col ul li:before { content: none; }
+.page-footer .bottom .col ul li a {color: inherit; text-decoration: none; color: #fff; }
 .page-footer .bottom .col ul li a:hover {text-decoration: underline;}
 .page-footer .bottom .col .address {margin-top: 35px;}
 .page-footer .bottom .col .address:first-child {margin-top: 0;}
@@ -313,7 +373,7 @@ a:hover {text-decoration: none;}
  * Отзывы
  ***/
 
-.reviews {margin-bottom: 25px;}
+.reviews {margin-bottom: 35px;}
 .reviews .items {margin: 0 0 0 -15px; overflow: hidden;}
 .reviews .items .item {float: left; width: 310px; margin-left: 15px; background; #fff;}
 .reviews .items .item .content {padding: 22px; color: #807860;}
