@@ -124,4 +124,3 @@ jQuery(document).ready(function($){	alignCatMenu();
 
 $(window).load(function(){	alignCatMenu();
 	alignReviewsHeight()});
-

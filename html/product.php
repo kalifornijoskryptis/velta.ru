@@ -15,6 +15,8 @@
 	</script>
 	<![endif]-->
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<!--<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>-->
+	<script type="text/javascript" src="http://yandex.st/share/share.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
@@ -22,7 +24,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 	<script src="js/jquery.liquid-slider.js"></script>
-	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
 </head>
 <body>
 <header class="page-header">
@@ -90,56 +94,76 @@
 	</nav> <!--//.catmenu//-->
 </div> <!--//.primary-slider//-->
 
-<div class="wrapper">
- <div class="content">
-	<h1>Карта наших салонов в Москве и МО</h1>
-	<div id="ymaps-overview"></div> <!-- Yandex.Map wrapper -->
-	<div id="tabs" class="liquid-slider no-js">	
-	<div>
-      <h3 class="title">Обзорная карта</h3>
-      <p>На данной карте вы можете посмотреть расположение салонов компании &laquo;Велта&raquo; и выбрать наиболее подходящий из них. На данный момент, в компании &laquo;Велта&raquo; имеются 2 фирменных магазина на &laquo;Соколинке&raquo; и в ТЦ &laquo;Снегири&raquo;.</p>
-    </div>
-    <div>
-      <h3 class="title">Мебельный салон на &laquo;Соколинке&raquo;</h3>
-      <p><b>Наш адрес:</b> 105118, Москва, 9-я улица Соколиной горы, дом 21
-	  <p><b>Проезд:</b> м. &laquo;Семёновская&raquo; или &laquo;Шоссе энтузиастов&raquo;, далее авт. 36,83,141,254,702, трамвай 34,36, марш. 341,83 до остановки &laquo;9-я улица Соколиной горы&raquo;.</p>
-	  <p><b>Часы работы:</b> понедельник - суббота с 10.00 до 20.00, воскресенье с 10.00 до 18.00 без обеда</p>
-	  <p><b>Телефоны:</b> +7 (495) 365-53-34, +7 (495) 365-36-17</p>
-    </div>
-    <div>
-      <h3 class="title">Мебельный салон в ТЦ &laquo;Снегири&raquo;</h3>
-      <p><b>Наш адрес:</b> Московская область (направление - Волоколамское шоссе), Снегири, ул. Московская, д. 12, ТЦ &laquo;Снегири&raquo;
-	  <p><b>Часы работы:</b> понедельник - суббота с 10.00 до 20.00; воскресенье с 10.00 до 18.00 без обеда</p>
-	  <p><b>Телефоны:</b> +7 (905) 563-66-11</p>
-    </div>
-  </div>
- </div> 
-</div> <!--//.content//-->
-
-<div class="wrapper">
-	<div class="reviews">
-		<div class="items">
-			<div class="item"><div class="content">
-				<p class="name">Отзыв от Анастасии С., Москва</p>
-				В магазине &laquo;Велта&raquo; покупали спальный гарнитур: кровать, шкаф, прикроватные столики и лампы. Понравилось отношение к клиенту и обслужение. Спасибо!
-			</div></div> <!--//.item//-->
-			<div class="item"><div class="content">
-				<p class="name">Отзыв от Елены Н., Владимир</p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam, urna vel lacinia vehicula, metus nisi venenatis turpis, ut congue elit erat et dui. Nunc id blandit nibh, ac rhoncus leo.
-			</div></div> <!--//.item//-->
-			<div class="item"><div class="content">
-				<p class="name">Отзыв от Натальи, Ярославль</p>
-				Donec vitae lectus eu est tincidunt rutrum sit amet sit amet nulla. Vestibulum eget pulvinar diam, pellentesque condimentum ipsum. Nulla sagittis turpis eu auctor rhoncus.
-			</div></div> <!--//.item//-->
-		</div> <!--//.items//-->
-		<div class="op">
-			<a href="#">+ <span>загрузить все 6 отзывов</span></a>
-			<a href="#">+ <span>оставить свой отзыв</span></a>
+<div class="content">
+  <div class="wrapper">
+  
+	<div class="block product-photo">
+			<ul class="bxslider">
+			<li><img src="content/chair-slide1.jpg"></li>
+			<li><img src="content/chair-slide2.jpg"></li>
+			<li><img src="content/chair-slide3.jpg"></li>
+		</ul>
+		<div class="bxlinks">
+			<a class="quick-order" href="#">Быстрый заказ</a> <a class="show-in-interior" href="#">Показать в интерьере</a>
 		</div>
-	</div> <!--//.reviews//-->
-</div>
-<div class="wrapper">
-	<div class="advantages">
+		<div id="bx-pager">
+			<a class="thumbnail" data-slide-index="0"><img src="content/chair-slide1.jpg"></a>
+			<a class="thumbnail" data-slide-index="1"><img src="content/chair-slide2.jpg"></a>
+			<a class="thumbnail" data-slide-index="2"><img src="content/chair-slide3.jpg"></a>
+		</div>
+		<script>
+			$('.bxslider').bxSlider({
+				pagerCustom: '#bx-pager'
+			});
+		</script>
+    </div>
+	
+	<div class="block product-information">
+		<h1>Офисное кресло &laquo;Новый стиль&raquo;</h1>
+		<a href="#" class="tip"><div class="favorite"><span>В любимые товары</span></div></a>
+		<div class="rate"></div>
+		<div class="in-stock">В наличии: 5 шт.</div>
+		<div class="sku">Артикул: AK043-47</div>
+		<p>С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. </p>
+		<p>Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины с роликами даст возможность свободно передвигаться в границах своей рабочей зоны и брать необходимые вам документы, а также вы можете индивидуально отрегулировать высоту стула. <a class="show-all" href="#">Показать все</a></p>
+		<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir" data-yashareTheme="counter"></div> 
+
+
+	</div>
+	
+	<div class="block product-options">
+	  <div class="color">
+		<p>Выберите цвет:</p>
+		<ul>
+			<li><a href="#">Бежевый</a></li>
+			<li><a href="#">Белый</a></li>
+			<li><a href="#">Золотистый</a></li>
+			<li><a href="#">Асфальт</a></li>
+			<li><a href="#">Дуб</a></li>
+		</ul>
+	  </div>
+	  <div class="price">
+		<p class="price"><s>20000 руб.</s> 17900 руб.</p>
+		<p class="coupon">Для гарантии цены <a href="#">распечатайте купон</a></p>
+	  </div>
+	</div>
+	<div class="banner-links">
+		<ul>
+			<li><a href="#">Все и сразу</a></li>
+			<li><a href="#">Радуем ценами</a></li>
+			<li><a href="#">Радуем выбором</a></li>
+		</ul>
+	  </div>
+	
+	<div class="block add-to-cart">
+		<form>
+		  <input name="qty" type="text" placeholder="1">
+		  <input name="atc" type="submit" value="Добавить в корзину">
+		  <input name="credit" type="submit" value="Купить в кредит">
+		</form>
+	</div>
+	
+	<div class="block advantages">
 		<div class="items">
 			<div class="item item1">
 				<span class="icon"></span>
@@ -168,25 +192,71 @@
 			</div> <!--//.item//-->
 		</div> <!--//.items//-->
 	</div> <!--//.advantages//-->
-</div> <!--//.wrapper//-->
-
-<div class="best-deals">
-	<div class="wrapper">
-		<h1>Наши лучшие предложения</h1>
+	
+	<div class="block char-tabs">
+		<div id="char-tabs" class="liquid-slider no-js">	
+			<div>
+				<h3 class="title">Описание</h3>
+				<p>На данной карте вы можете посмотреть расположение салонов компании &laquo;Велта&raquo; и выбрать наиболее подходящий из них. На данный момент, в компании &laquo;Велта&raquo; имеются 2 фирменных магазина на &laquo;Соколинке&raquo; и в ТЦ &laquo;Снегири&raquo;.</p>
+			</div>
+			<div>
+				<h3 class="title">Характеристики</h3>
+				<p><b>Наш адрес:</b> 105118, Москва, 9-я улица Соколиной горы, дом 21
+				<p><b>Проезд:</b> м. &laquo;Семёновская&raquo; или &laquo;Шоссе энтузиастов&raquo;, далее авт. 36,83,141,254,702, трамвай 34,36, марш. 341,83 до остановки &laquo;9-я улица Соколиной горы&raquo;.</p>
+				<p><b>Часы работы:</b> понедельник - суббота с 10.00 до 20.00, воскресенье с 10.00 до 18.00 без обеда</p>
+				<p><b>Телефоны:</b> +7 (495) 365-53-34, +7 (495) 365-36-17</p>
+			</div>
+			<div>
+				<h3 class="title">Отзывы покупателей</h3>
+				<p><b>Наш адрес:</b> Московская область (направление - Волоколамское шоссе), Снегири, ул. Московская, д. 12, ТЦ &laquo;Снегири&raquo;
+				<p><b>Часы работы:</b> понедельник - суббота с 10.00 до 20.00; воскресенье с 10.00 до 18.00 без обеда</p>
+				<p><b>Телефоны:</b> +7 (905) 563-66-11</p>
+			</div>
+			<div>
+				<h3 class="title">Посмотреть в салоне</h3>
+				<p><b>Наш адрес:</b> Московская область (направление - Волоколамское шоссе), Снегири, ул. Московская, д. 12, ТЦ &laquo;Снегири&raquo;
+				<p><b>Часы работы:</b> понедельник - суббота с 10.00 до 20.00; воскресенье с 10.00 до 18.00 без обеда</p>
+				<p><b>Телефоны:</b> +7 (905) 563-66-11</p>
+			</div>
+			<div>
+				<h3 class="title">Сертификаты</h3>
+				<p><b>Наш адрес:</b> Московская область (направление - Волоколамское шоссе), Снегири, ул. Московская, д. 12, ТЦ &laquo;Снегири&raquo;
+				<p><b>Часы работы:</b> понедельник - суббота с 10.00 до 20.00; воскресенье с 10.00 до 18.00 без обеда</p>
+				<p><b>Телефоны:</b> +7 (905) 563-66-11</p>
+			</div>
+		</div>
+  </div>
+  
+  <div class="reviews">
+		<div class="items">
+			<div class="item"><div class="content">
+				<p class="name">Отзыв от Анастасии С., Москва</p>
+				В магазине &laquo;Велта&raquo; покупали спальный гарнитур: кровать, шкаф, прикроватные столики и лампы. Понравилось отношение к клиенту и обслужение. Спасибо!
+			</div></div> <!--//.item//-->
+			<div class="item"><div class="content">
+				<p class="name">Отзыв от Елены Н., Владимир</p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquam, urna vel lacinia vehicula, metus nisi venenatis turpis, ut congue elit erat et dui. Nunc id blandit nibh, ac rhoncus leo.
+			</div></div> <!--//.item//-->
+			<div class="item"><div class="content">
+				<p class="name">Отзыв от Натальи, Ярославль</p>
+				Donec vitae lectus eu est tincidunt rutrum sit amet sit amet nulla. Vestibulum eget pulvinar diam, pellentesque condimentum ipsum. Nulla sagittis turpis eu auctor rhoncus.
+			</div></div> <!--//.item//-->
+		</div> <!--//.items//-->
+		<div class="op">
+			<a href="#">+ <span>загрузить все 6 отзывов</span></a>
+			<a href="#">+ <span>оставить свой отзыв</span></a>
+		</div>
+	</div> <!--//.reviews//-->
+	
+	<div class="best-deals">
+		<h1>Рекомендуем ознакомиться</h1>
 		<nav class="menu">
 			<ul>
-				<li class="current"><a href="#best1"><span>Диваны/кресла</span></a></li>
-				<li><a href="#best2"><span>Кухни</span></a></li>
-				<li><a href="#best3"><span>Шкафы-купе</span></a></li>
-				<li><a href="#best4"><span>Спальни</span></a></li>
-				<li><a href="#best5"><span>Прихожие</span></a></li>
-				<li><a href="#best6"><span>Столы/стулья</span></a></li>
-				<li><a href="#best7"><span>В офис</span></a></li>
-				<li><a href="#best8"><span>Стенка</span></a></li>
-				<li><a href="#best9"><span>Вытяжки</span></a></li>
+				<li class="current"><a href="#best1"><span>Другие товары из коллекции  «Кофморт»</span></a></li>
+				<li><a href="#best2"><span>Другие товары стиля «Классика»</span></a></li>
+				<li><a href="#best3"><span>Связанные товары</span></a></li>
 			</ul>
 		</nav>
-		
 		<div class="holder">
 			<div id="best1" class="best-deals-gallery">
 				<div class="gallery">
@@ -230,9 +300,18 @@
 					И так во всех остальных...
 				</div>
 			</div> <!--//#best2//-->
+			<div id="best3" class="best-deals-gallery hidden">
+				<div style="padding: 50px 0; text-align: center;">
+					Добавить элементы, по аналогии как на первой вкладке.<br />
+					И так во всех остальных...
+				</div>
+			</div> <!--//#best2//-->
 		</div> <!--//.holder//-->
-	</div> <!--//.wrapper//-->
-</div> <!--//.best-deals//-->
+	</div> <!--//.best-deals//-->
+	
+  </div> <!--//.wrapper//-->
+</div> <!--//.content//-->
+
 <footer class="page-footer">
 	<div class="wrapper">
 		<div class="information">
@@ -282,7 +361,7 @@
 		</div>
 	</div> <!--//.wrapper//-->
   <script>
-	$('#tabs').liquidSlider();
+	$('#char-tabs').liquidSlider();
   </script>
 </footer> <!--//.page-footer//-->
 </body>
