@@ -18,11 +18,12 @@
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 	<script src="js/jquery.liquid-slider.js"></script>
-	<script type="text/javascript" src="js/map.js"></script>
+	
 </head>
 <body>
 <header class="page-header">

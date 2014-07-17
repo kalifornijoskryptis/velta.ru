@@ -136,6 +136,7 @@ a:hover {text-decoration: none;}
 .liquid-slider .panel-container .fade { width:100%; opacity: 0; position: absolute; top: 0; left: 0; display: block; }
 .liquid-slider .panel { width: 100%; display: block; float: left; }
 .panel-wrapper {  padding: 15px 50px; position:relative; }
+.panel-wrapper  h3,
 .panel-wrapper  h3.title { margin: 10px 0px 20px 0px; color: #97875a; }
 .ls-nav { overflow: hidden; clear: both; }
 .ls-nav a { background: none; color: #66786d; font-size:18px; padding: 10px 25px 10px 0; outline:0; }
@@ -178,7 +179,6 @@ a:hover {text-decoration: none;}
  ***/
 
 #ymaps-overview { margin-bottom: 20px; width: 100%; height: 450px; }
-
 
 /***
  * Стили страницы товаров (product.php)
@@ -231,12 +231,13 @@ a:hover {text-decoration: none;}
 #bx-pager a.thumbnail.active { opacity: 1; }
 #bx-pager a.thumbnail img { height: 80px; -webkit-border-radius: 3px; border-radius: 3px;  }
 
-/* Product information */
+/* Basic rules for all blocks */
 .product-information,
 .product-options,
-.banner-links,
 .add-to-cart { float: left; width: 450px; }
 
+/* Product information */
+.product-information  { margin-bottom: 20px!important; }
 .product-information  h1 { float: left; margin-bottom: 0; }
 .product-information .favorite { background: url('../images/userbar-icons.png'); width: 16px; height: 12px; float: left; margin: 9px 0 0 9px; }
 .product-information p { clear: left; }
@@ -245,10 +246,71 @@ a:hover {text-decoration: none;}
 .product-information a:hover.tip { font-size: 99%; }
 .product-information a:hover.tip span { display: block; }
 
-.product-information .rate { clear: left; width: 70px; margin-right: 10px; float: left; height: 16px; background: url('../images/rate.png'); }
-.product-information .in-stock { float: left; margin-right: 10px; }
-.product-information .sku { float: left; margin-right: 10px; }
-		
+/* Rate, stock etc. */
+.product-information .rate { clear: left; width: 70px; margin-right: 30px; float: left; height: 16px; background: url('../images/rate.png'); }
+.product-information .stock { float: left; margin-right: 30px; color: #b3b3b3; }
+.product-information .stock .available {  margin: 3px 5px 0 0; background: #2ed700; width: 9px; height: 9px; border-radius: 10px; -webkit-border-radius: 10px; }
+.product-information .stock .not-available {  margin: 3px 5px 0 0; background: #b3b3b3; width: 9px; height: 9px; border-radius: 10px; -webkit-border-radius: 10px; }
+.product-information .sku { float: left; color: #b3b3b3; }
+.product-information .show-all { text-decoration: none; border-bottom: 1px dotted #94a099; }
+.product-information .show-all:hover { border-bottom: none; }
+
+/* Hover tooltip links */
+.product-information .tooltip-links { float: left; clear:left; }
+.product-information ul.tooltip-links { text-indent: 0px; margin: 20px 0; }
+.product-information ul.tooltip-links li { display: inline; margin: 0 15px 0 0; }
+.product-information ul.tooltip-links li:before { content: none; left: 0px; }
+.product-information ul.tooltip-links li a { text-decoration: none; border-bottom: 1px dotted #94a099; }
+.product-information ul.tooltip-links li a:hover { border-bottom: none; }
+.product-information ul.tooltip-links li a.tip { position: relative; }
+.product-information ul.tooltip-links  li a.tip span { display: none; position: absolute; left: -110px; width: 300px; padding: 10px; z-index: 100; background: #000; color: #fff; border-radius: 3px; -webkit-border-radius: 3px; font-size: 12px; }
+.product-information ul.tooltip-links  li a.tip span p { margin: 0; }
+.product-information ul.tooltip-links  li a:hover.tip { font-size: 99%; }
+.product-information ul.tooltip-links  li a:hover.tip span { display: block; }
+
+/* Price block */
+.product-options { background: #fff; padding: 10px;  border-radius: 3px; -webkit-border-radius: 3px; margin-bottom: 10px!important; }
+.product-options .color { }
+.product-options .color ul { text-indent: 0px; }
+.product-options .color ul li { display: inline;  }
+.product-options .color ul li:before { content: none; left: 0px; }
+.product-options .color ul li a { width: 60px; height: 60px; border-radius: 3px; -webkit-border-radius: 3px; display: inline-block; }
+.product-options .color ul li .active { background: url('../images/color-select.png') 50% no-repeat; width: 60px; height: 60px; }
+.product-options .color ul li a:hover,
+.product-options .color ul li a.active:hover { opacity: 0.5; }
+.product-options .price p { margin-bottom: 30px; }
+.product-options .price .sum { font-size: 40px; color: #66786d; margin-bottom: 3px; }
+.product-options .price .sum s { font-size: 25px; color: #b7b7b7; }
+.product-options .advantages-scroll { border: 1px solid #f4f4f4; padding: 15px; border-radius: 3px; -webkit-border-radius: 3px; }
+.product-options .advantages-scroll ul { text-indent: 0px; margin-bottom: 0; text-align: center; }
+.product-options .advantages-scroll ul li { display: inline; padding: 0px 20px; border-right: 1px solid #eaeaea; }
+.product-options .advantages-scroll ul li.last { border-right: none; }
+.product-options .advantages-scroll ul li a.b1 { border-bottom: 1px dotted #72acae; text-decoration: none; color: #72acae; }
+.product-options .advantages-scroll ul li a.b2 { border-bottom: 1px dotted #a6b12e; text-decoration: none; color: #a6b12e; }
+.product-options .advantages-scroll ul li a.b3 { border-bottom: 1px dotted #eeb424; text-decoration: none; color: #eeb424; }
+.product-options .advantages-scroll ul li a:hover { border-bottom: none; }
+.product-options .advantages-scroll ul li:before { content: none; left: 0px; }
+
+/* ATC block */
+.add-to-cart input {  }
+.add-to-cart input[type="text"] { height: 46px; border: none; -moz-box-shadow: inset 0px -3px 0px #F1F1F1; -webkit-box-shadow: inset 0px -3px 0px #F1F1F1; box-shadow: inset 0px -3px 0px #F1F1F1; text-align: center; font-size: 21px; width: 70px; color: #4c4c4c; }
+.add-to-cart input[type="button"] { height: 45px; background: #66786d; color: #fff; border: none; text-align: left; font-size: 15px; border-radius: 3px; -webkit-border-radius: 3px; }
+.add-to-cart input[type="button"]:hover { opacity: 0.9; }
+.add-to-cart input.qty { -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; }
+.add-to-cart input.atc { margin-left: -5px; background: url('../images/cart-button.png') 10px no-repeat #66786d; text-indent: 30px; padding: 0px 15px 0px 20px; }
+.add-to-cart input.credit { margin-left: -5px; background: url('../images/rs-logo.png') 10px no-repeat #393939; text-indent: 30px; padding: 0px 15px 0px 20px; }
+
+/* Product tabs */
+.product-tabs .panel-wrapper table { width:100%; }
+.product-tabs .panel-wrapper th { font-size: 16px; height: 45px; background: none; border-bottom: 1px solid #b6ab8b; }
+.product-tabs .panel-wrapper th p { color: #b6ab8b; text-transform: none; }
+.product-tabs .panel-wrapper tr { height: 30px; background: none; border-bottom: none; }
+.product-tabs .panel-wrapper tr:hover { background: #fff8e3; }
+.product-tabs .panel-wrapper td p.no-data { color:#eaeaea }
+.product-tabs .panel-wrapper .review { width: 400px; float: left; padding: 20px 10px; }
+.product-tabs .panel-wrapper .review h3 { margin: 10px 0px 0px 0px; }
+.product-tabs .panel-wrapper .line { width: 100%; border-bottom: 1px solid #e0dbcd; clear: both; }
+.product-tabs .panel-wrapper .rate { width: 70px; height: 16px; background: url('../images/rate.png'); margin-bottom:15px; }
 
 /***
  * Шапка
@@ -404,7 +466,7 @@ a:hover {text-decoration: none;}
 
 .best-deals {margin-bottom: 25px; padding: 25px 0; background: #fff;}
 .best-deals .menu {margin-top: 10px; padding-bottom: 6px; font-size: 18px; color: #66786d; text-align: center; overflow: hidden;}
-.best-deals .menu ul {float: left; position: relative; left: 50%;}
+.best-deals .menu ul { /* float: left; */ position: relative; left: 50%;}
 .best-deals .menu ul li {float: left; position: relative; right: 50%; margin: 0 12px;}
 .best-deals .menu ul li a {display: block; line-height: 35px; text-decoration: none;}
 .best-deals .menu ul li a span {border-bottom: 1px dotted;}
