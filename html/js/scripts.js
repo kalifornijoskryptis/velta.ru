@@ -140,3 +140,9 @@ $(function() {
     }
   });
 });
+
+/* Barcode generator */
+function generateBarcode()
+{
+	return $("#bcTarget").barcode("1234567890128", "ean13", {barWidth:4, barHeight:50});
+}
