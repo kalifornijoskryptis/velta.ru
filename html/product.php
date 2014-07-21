@@ -16,7 +16,6 @@
 	<![endif]-->
 	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<!--<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>-->
-	<script type="text/javascript" src="http://yandex.st/share/share.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
@@ -27,9 +26,9 @@
 	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-	<script type="text/javascript" src="js/map.js"></script>
+
 </head>
-<body>
+<body class="page-product">
 <header class="page-header">
 	<div class="logo-holder">
 		<a href="#" class="logo">Велта Мебель</a>
@@ -93,6 +92,31 @@
 			</ul>
 		</div> <!--//.wrapper//-->
 	</nav> <!--//.catmenu//-->
+	
+	<div class="gallery">
+		<div class="slides" id="primary-slider">
+			<div class="slide">
+				<img src="content/slide1.jpg" alt="" />
+			</div>
+			<div class="slide">
+				<img src="content/slide2.jpg" alt="" />
+			</div>
+			<div class="slide">
+				<img src="content/slide3.jpg" alt="" />
+			</div>
+			<div class="slide">
+				<img src="content/slide4.jpg" alt="" />
+			</div>
+			<div class="slide">
+				<img src="content/slide5.jpg" alt="" />
+			</div>
+		</div> <!--//.slides//-->
+		<div class="clear"></div>
+		<div class="pages"></div>
+		<a href="#" id="primary-slider-prev" class="nav nav-prev"></a>
+		<a href="#" id="primary-slider-next" class="nav nav-next"></a>
+	</div> <!--//.gallery//-->
+	
 </div> <!--//.primary-slider//-->
 
 <div class="content">
@@ -168,13 +192,14 @@
 		</form>
 	</div>
 	
-	<div class="block advantages">
+	<div class="wrapper">
+	<div class="advantages">
 		<div class="items">
 			<div class="item item1">
 				<span class="icon"></span>
 				<div class="content"><div class="text">
 					<p class="t">Всё и сразу</p>
-					— склад-магазин в одном месте в Москве без выходных<br />
+					— склад-магазин в одном месте в Москве<br />
 					— удобная парковка<br />
 					— бесплатная загрузка и разгрузка
 				</div></div>
@@ -182,21 +207,22 @@
 			<div class="item item2">
 				<span class="icon"></span>
 				<div class="content"><div class="text">
-					<p class="t">Радуем ценами</p>
-					— наш магазин работает на рынке с 1970 года<br />
-					— более 528 700 клиентов
+					<p class="t">Лучшие цены</p>
+					— наш магазин работает на рынке с 1979 года<br />
+					— более 528 700 довольных обслуживанием и ценами клиентов
 				</div></div>
 			</div> <!--//.item//-->
 			<div class="item item3">
 				<span class="icon"></span>
 				<div class="content"><div class="text">
-					<p class="t">Всё и сразу</p>
+					<p class="t">Огромный выбор</p>
 					— 50 фабрик в одном месте<br />
-					— приезжайте, выбирайте и покупайте
+					— приезжайте, смотрите, выбирайте и покупайте нашу мебель
 				</div></div>
 			</div> <!--//.item//-->
 		</div> <!--//.items//-->
 	</div> <!--//.advantages//-->
+	</div> <!--//.wrapper//-->
 	
 	<div class="block product-tabs">
 		<div id="char-tabs" class="liquid-slider no-js">	
@@ -231,7 +257,7 @@
 				</table>
 			</div>
 			<div>
-				<h3 class="title" style="display:none;">Отзывы покупателей</h3>
+				<h3 class="title" style="display:none;">Отзывы о товаре</h3>
 				<div class="review">
 					<h3>Отзыв от Анастасии С., Москва</h3><div class="rate"></div>
 					<p>В магазине «Велта» покупали спальный гарнитур: кровать, шкаф, прикроватные столики и лампы. Понравилось отношение к клиенту и обслужение. Спасибо!</p>
@@ -416,5 +442,6 @@
 	$('#char-tabs').liquidSlider();
   </script>
 </footer> <!--//.page-footer//-->
+<div id="overlay"></div>
 </body>
 </html>

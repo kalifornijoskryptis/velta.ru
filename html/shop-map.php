@@ -117,6 +117,39 @@
  </div> 
 </div> <!--//.content//-->
 
+
+<div class="wrapper">
+	<div class="advantages">
+		<div class="items">
+			<div class="item item1">
+				<span class="icon"></span>
+				<div class="content"><div class="text">
+					<p class="t">Всё и сразу</p>
+					— склад-магазин в одном месте в Москве<br />
+					— удобная парковка<br />
+					— бесплатная загрузка и разгрузка
+				</div></div>
+			</div> <!--//.item//-->
+			<div class="item item2">
+				<span class="icon"></span>
+				<div class="content"><div class="text">
+					<p class="t">Лучшие цены</p>
+					— наш магазин работает на рынке с 1979 года<br />
+					— более 528 700 довольных обслуживанием и ценами клиентов
+				</div></div>
+			</div> <!--//.item//-->
+			<div class="item item3">
+				<span class="icon"></span>
+				<div class="content"><div class="text">
+					<p class="t">Огромный выбор</p>
+					— 50 фабрик в одном месте<br />
+					— приезжайте, смотрите, выбирайте и покупайте нашу мебель
+				</div></div>
+			</div> <!--//.item//-->
+		</div> <!--//.items//-->
+	</div> <!--//.advantages//-->
+</div> <!--//.wrapper//-->
+
 <div class="wrapper">
 	<div class="reviews">
 		<div class="items">
@@ -139,37 +172,6 @@
 		</div>
 	</div> <!--//.reviews//-->
 </div>
-<div class="wrapper">
-	<div class="advantages">
-		<div class="items">
-			<div class="item item1">
-				<span class="icon"></span>
-				<div class="content"><div class="text">
-					<p class="t">Всё и сразу</p>
-					— склад-магазин в одном месте в Москве без выходных<br />
-					— удобная парковка<br />
-					— бесплатная загрузка и разгрузка
-				</div></div>
-			</div> <!--//.item//-->
-			<div class="item item2">
-				<span class="icon"></span>
-				<div class="content"><div class="text">
-					<p class="t">Радуем ценами</p>
-					— наш магазин работает на рынке с 1970 года<br />
-					— более 528 700 клиентов
-				</div></div>
-			</div> <!--//.item//-->
-			<div class="item item3">
-				<span class="icon"></span>
-				<div class="content"><div class="text">
-					<p class="t">Всё и сразу</p>
-					— 50 фабрик в одном месте<br />
-					— приезжайте, выбирайте и покупайте
-				</div></div>
-			</div> <!--//.item//-->
-		</div> <!--//.items//-->
-	</div> <!--//.advantages//-->
-</div> <!--//.wrapper//-->
 
 <div class="best-deals">
 	<div class="wrapper">
@@ -234,6 +236,7 @@
 		</div> <!--//.holder//-->
 	</div> <!--//.wrapper//-->
 </div> <!--//.best-deals//-->
+
 <footer class="page-footer">
 	<div class="wrapper">
 		<div class="information">
