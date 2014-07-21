@@ -70,7 +70,7 @@ jQuery(document).ready(function($){	alignCatMenu();
 		infinite: false,
 		items: 3,
 		scroll: {items: 1, duration: 1000},
-		auto: false,
+		auto: true,
 		prev: '#primary-slider-prev',
 		next: '#primary-slider-next',
 		pagination: {container: $(this).find('.pages')},
@@ -146,3 +146,26 @@ function generateBarcode()
 {
 	return $("#bcTarget").barcode("1234567890128", "ean13", {barWidth:4, barHeight:50});
 }
+
+/* Interior slider */
+ $(document).ready(function(){
+
+	    $(".show-in-interior").click(function () {
+			if ($(".gallery").is(":hidden")) {
+
+				$(".gallery").show("slow");
+				alignPrimarySlider();
+				$("#overlay").fadeIn(400);
+
+				$('#overlay').parent().css({
+					'height': $(document).height()
+				});
+
+			} else {
+
+				$(".gallery").hide("slow");
+
+			}
+  return false;
+});
+});
