@@ -23,9 +23,78 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 	<script src="js/jquery.liquid-slider.js"></script>
-	
 </head>
 <body>
+<div id="popup">
+	<div class="overlay" style="display:none;"></div>
+	<div class="addCart block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Ваш товар в корзине!</p>
+			<p class="text">Ваш товар был добавлен в корзину!<br>Желаете оформить заказ или продолжить совершать покупки в магазине?</p>
+			<a class="addOrder" href="/order/add_order.html">К оформлению заказа</a>
+			<a class="noAddOrder" href="#" onclick="return false;">Продолжить покупки</a>
+	</div>
+	<div class="qview block" style="display: none;">
+			<div class="close"></div>
+			<div class="left">
+				<img id="quick_pic" src="content/chair1.jpg">
+			</div>
+			<div class="right">
+				<div class="heading">Офисное кресло «Мадрид»</div>
+				<div class="more_info">
+					<span class="rating"></span>
+					<span class="availability out">Наличие: под заказ</span>
+					<span class="item_id">Артикул: 19</span>
+				</div>
+				<div class="text">Офисное кресло «Мадрид»</div>
+				<div class="price">
+					<span class="old_price">12&nbsp;390&nbsp;руб</span>
+					<span class="price">15&nbsp;000&nbsp;руб</span>
+				</div>
+				<div class="add_cart">
+					<form>
+        				<input id="qty" type="text" name="" value="1"><button class="submit" type="submit">Добавить в корзину</button>
+    				</form>
+				</div>
+			</div>
+	</div>
+	<div class="callme block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Мы вам перезвоним!</p>
+			<p class="text">Мы рады, что вы заинтересованы в наших товарах и услугах. Пожалуйста, укажите ваше имя и номер телефона, мы вам перезвоним!</p>
+			<div class="form">
+				<input type="text" class="name" placeholder="Моё имя">
+				<input type="text" class="phone" placeholder="Мой номер телефона">
+				<input type="submit" value="Перезвоните мне" class="button"/>
+			</div>
+	</div>
+	<div class="addreview block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Оставьте свой отзыв</p>
+			<p class="text">Мы надеемся, что у вас остались только положительные эмоции от покупок и обслуживания в нашем магазине. Заполните необходимые поля, чтобы оставить отзыв.</p>
+			<div class="form">
+				<input type="text" class="name" placeholder="Как вас зовут">
+				<input type="text" class="email" placeholder="Ваша электронная почта">
+				<textarea class="textarea" data-myholder="Ваш отзыв о работе нашего магазина. Напишите о 
+качестве товара, скорости доставки и уровне 
+обслуживания. Спасибо, что делаете покупки у нас!"></textarea>
+				<input type="submit" class="button"/>
+			</div>
+	</div>
+	<div class="map1 block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Салон в ТЦ «Снегири»</p>
+			<p class="text">Московская область (направление — Волоколамское шоссе), п. Снегири, ул. Московская, д. 12, ТЦ «Снегири»<br><br>+7 (495) 225 4553, +7 (905) 563 6611<br>velta@tc-snegiri.ru</p>
+			<img src="images/mapYa.png">
+	</div>
+	<div class="map2 block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Салон на Соколинке</p>
+			<p class="text">105118, Москва, 9-я улица Соколиной горы, дом 21<br><br>+7 (495) 225 4553<br>+7 (495) 365 3617</p>
+			<img src="images/mapYa.png">
+	</div>
+</div>
+
 <header class="page-header">
 	<div class="logo-holder">
 		<a href="#" class="logo">Велта Мебель</a>
@@ -189,32 +258,43 @@
 				<li><a href="#best9"><span>Вытяжки</span></a></li>
 			</ul>
 		</nav>
-		
 		<div class="holder">
 			<div id="best1" class="best-deals-gallery">
 				<div class="gallery">
 					<ul class="carousel">
 						<li>
-							<img src="content/chair1.jpg" class="photo" alt="" />
-							<p class="title">Офисное кресло &laquo;Мадрид&raquo;</p>
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair1.jpg" class="photo" alt="" />			
+		   					</div>
+							<p class="title">Офисное кресло «Мадрид»</p>
 							<p class="price">15000 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair2.jpg" class="photo" alt="" />
-							<p class="title">Офисное кресло &laquo;Калифорния&raquo;</p>
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair2.jpg" class="photo" alt="" />			
+		   					</div>
+							<p class="title">Офисное кресло «Калифорния»</p>
 							<p class="price">27000 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair3.jpg" class="photo" alt="" />
-							<p class="title">Офисное кресло &laquo;Валенсия&raquo;</p>
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair3.jpg" class="photo" alt="" />			
+		   					</div>
+							<p class="title">Офисное кресло «Валенсия»</p>
 							<p class="price"><s>13500 р.</s> 9500 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair4.jpg" class="photo" alt="" />
-							<p class="title">Офисное кресло &laquo;Алабама&raquo;</p>
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair4.jpg" class="photo" alt="" />			
+		   					</div>
+							<p class="title">Офисное кресло «Алабама»</p>
 							<p class="price">11500 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
@@ -224,7 +304,8 @@
 					<a href="#" class="nav nav-next"></a>
 				</div> <!--//.gallery//-->
 				<div class="summary">
-					<a href="#" class="more">+ <span>показать все 15 товаров</span></a>
+					<a href="#" class="more off">+ <span>показать все 15 товаров</span></a>
+					<a href="#" class="more on" style="display: none;">- <span>спрятать все  15 товаров</span></a>
 				</div>
 			</div> <!--//#best1//-->
 			<div id="best2" class="best-deals-gallery hidden">

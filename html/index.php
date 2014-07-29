@@ -58,7 +58,7 @@ isBrowserIE = true;
 			<div class="form">
 				<input type="text" class="name" placeholder="Моё имя">
 				<input type="text" class="phone" placeholder="Мой номер телефона">
-				<input type="submit" class="button"/>
+				<input type="submit" value="Перезвоните мне" class="button"/>
 			</div>
 	</div>
 	<div class="addreview block" style="display:none;">
@@ -278,7 +278,7 @@ isBrowserIE = true;
 				<div class="gallery">
 					<ul class="carousel">
 						<li>
-						<div class="areaQuickView">
+							<div class="areaQuickView">
 		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
 								<img src="content/chair1.jpg" class="photo" alt="" />			
 		   					</div>
@@ -287,19 +287,28 @@ isBrowserIE = true;
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair2.jpg" class="photo" alt="" />
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair2.jpg" class="photo" alt="" />			
+		   					</div>
 							<p class="title">Офисное кресло «Калифорния»</p>
 							<p class="price">27000 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair3.jpg" class="photo" alt="" />
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair3.jpg" class="photo" alt="" />			
+		   					</div>
 							<p class="title">Офисное кресло «Валенсия»</p>
 							<p class="price"><s>13500 р.</s> 9500 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair4.jpg" class="photo" alt="" />
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair4.jpg" class="photo" alt="" />			
+		   					</div>
 							<p class="title">Офисное кресло «Алабама»</p>
 							<p class="price">11500 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>

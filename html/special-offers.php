@@ -15,11 +15,82 @@
 	</script>
 	<![endif]-->
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 </head>
 <body class="page-special-offers">
+<div id="popup">
+	<div class="overlay" style="display:none;"></div>
+	<div class="addCart block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Ваш товар в корзине!</p>
+			<p class="text">Ваш товар был добавлен в корзину!<br>Желаете оформить заказ или продолжить совершать покупки в магазине?</p>
+			<a class="addOrder" href="/order/add_order.html">К оформлению заказа</a>
+			<a class="noAddOrder" href="#" onclick="return false;">Продолжить покупки</a>
+	</div>
+	<div class="qview block" style="display: none;">
+			<div class="close"></div>
+			<div class="left">
+				<img id="quick_pic" src="content/chair1.jpg">
+			</div>
+			<div class="right">
+				<div class="heading">Офисное кресло «Мадрид»</div>
+				<div class="more_info">
+					<span class="rating"></span>
+					<span class="availability out">Наличие: под заказ</span>
+					<span class="item_id">Артикул: 19</span>
+				</div>
+				<div class="text">Офисное кресло «Мадрид»</div>
+				<div class="price">
+					<span class="old_price">12&nbsp;390&nbsp;руб</span>
+					<span class="price">15&nbsp;000&nbsp;руб</span>
+				</div>
+				<div class="add_cart">
+					<form>
+        				<input id="qty" type="text" name="" value="1"><button class="submit" type="submit">Добавить в корзину</button>
+    				</form>
+				</div>
+			</div>
+	</div>
+	<div class="callme block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Мы вам перезвоним!</p>
+			<p class="text">Мы рады, что вы заинтересованы в наших товарах и услугах. Пожалуйста, укажите ваше имя и номер телефона, мы вам перезвоним!</p>
+			<div class="form">
+				<input type="text" class="name" placeholder="Моё имя">
+				<input type="text" class="phone" placeholder="Мой номер телефона">
+				<input type="submit" class="button"/>
+			</div>
+	</div>
+	<div class="addreview block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Оставьте свой отзыв</p>
+			<p class="text">Мы надеемся, что у вас остались только положительные эмоции от покупок и обслуживания в нашем магазине. Заполните необходимые поля, чтобы оставить отзыв.</p>
+			<div class="form">
+				<input type="text" class="name" placeholder="Как вас зовут">
+				<input type="text" class="email" placeholder="Ваша электронная почта">
+				<textarea class="textarea" data-myholder="Ваш отзыв о работе нашего магазина. Напишите о 
+качестве товара, скорости доставки и уровне 
+обслуживания. Спасибо, что делаете покупки у нас!"></textarea>
+				<input type="submit" class="button"/>
+			</div>
+	</div>
+	<div class="map1 block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Салон в ТЦ «Снегири»</p>
+			<p class="text">Московская область (направление — Волоколамское шоссе), п. Снегири, ул. Московская, д. 12, ТЦ «Снегири»<br><br>+7 (495) 225 4553, +7 (905) 563 6611<br>velta@tc-snegiri.ru</p>
+			<img src="images/mapYa.png">
+	</div>
+	<div class="map2 block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Салон на Соколинке</p>
+			<p class="text">105118, Москва, 9-я улица Соколиной горы, дом 21<br><br>+7 (495) 225 4553<br>+7 (495) 365 3617</p>
+			<img src="images/mapYa.png">
+	</div>
+</div>
 <header class="page-header">
 	<div class="logo-holder">
 		<a href="#" class="logo">Велта Мебель</a>
@@ -95,25 +166,34 @@
 		<div class="holder">
 					 <ul class="products">
 						<li>
-							<img src="content/chair5.jpg" class="photo" alt="" />
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair5.jpg" class="photo" alt="" />			
+		   					</div>
 							<p class="title"><a href="#">Офисное кресло &laquo;Функционал&raquo;</a></p>
 							<p class="price"><s>15800 р.</s> 12000 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair6.jpg" class="photo" alt="" />
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair6.jpg" class="photo" alt="" />			
+		   					</div>
 							<p class="title"><a href="#">Офисное кресло &laquo;Барон&raquo;</a></p>
 							<p class="price"><s>35800 р.</s> 22000 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li class="out-of-stock">
 							<div class="out"><p>Нет в наличии (распродано)</p></div>
-							<img src="content/chair7.jpg" class="photo" alt="" />
+							<img src="content/chair7.jpg" class="photo" alt="" />		
 							<p class="title"><a href="#">Офисное кресло &laquo;Менеджер 1&raquo;</a></p>
 							<p class="price"><s>5800 р.</s> 2000 р.</p>
 						</li>
 						<li>
-							<img src="content/chair8.jpg" class="photo" alt="" />
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair8.jpg" class="photo" alt="" />			
+		   					</div>
 							<p class="title"><a href="#">Офисное кресло &laquo;Царь&raquo;</a></p>
 							<p class="price"><s>45800 р.</s> 32250 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
@@ -125,7 +205,10 @@
 							<p class="price"><s>75800 р.</s> 62010 р.</p>
 						</li>
 						<li>
-							<img src="content/chair10.jpg" class="photo" alt="" />
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair10.jpg" class="photo" alt="" />			
+		   					</div>
 							<p class="title"><a href="#">Офисное кресло &laquo;Император&raquo;</a></p>
 							<p class="price"><s>195800 р.</s> 182780 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
@@ -137,13 +220,19 @@
 							<p class="price"><s>9800 р.</s> 9799 р.</p>
 						</li>
 						<li>
-							<img src="content/chair12.jpg" class="photo" alt="" />
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair12.jpg" class="photo" alt="" />			
+		   					</div>
 							<p class="title"><a href="#">Офисное кресло &laquo;Белоснежное&raquo;</a></p>
 							<p class="price"><s>1800 р.</s> 900 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair3.jpg" class="photo" alt="" />
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair3.jpg" class="photo" alt="" />			
+		   					</div>
 							<p class="title"><a href="#">Офисное кресло &laquo;Валенсия&raquo;</a></p>
 							<p class="price"><s>15800 р.</s> 12000 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>

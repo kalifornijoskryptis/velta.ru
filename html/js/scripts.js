@@ -114,6 +114,7 @@ jQuery(document).ready(function($){
 	$('.best-deals .carousel').each(function(){
 		$(this).carouFredSel({
 			width: '100%',
+			height: 450,
 			items: 3,
 			scroll: 1,
 			auto: {play: false},
@@ -233,10 +234,9 @@ $(window).load(function(){
 	alignReviewsHeight()
 });
 
-
 /* Smooth scroll function */
 $(function() {
-  $('a[href*=#char-tabs]:not([href=#])').click(function() {
+  $('.scroll').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -255,26 +255,3 @@ function generateBarcode()
 {
 	return $("#bcTarget").barcode("1234567890128", "ean13", {barWidth:4, barHeight:50});
 }
-
-/* Interior slider */
- $(document).ready(function(){
-
-	    $(".show-in-interior").click(function () {
-			if ($(".gallery").is(":hidden")) {
-
-				$(".gallery").show("slow");
-				alignPrimarySlider();
-				$("#overlay").fadeIn(400);
-
-				$('#overlay').parent().css({
-					'height': $(document).height()
-				});
-
-			} else {
-
-				$(".gallery").hide("slow");
-
-			}
-  return false;
-});
-});

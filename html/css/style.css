@@ -172,7 +172,7 @@ a:hover {text-decoration: none;}
  * Стили страницы товаров (product.php)
  ***/
 
-.page-product .primary-slider .gallery { z-index: 1100; display: none; }
+.page-product .primary-slider .gallery { display: none; }
 .page-product .primary-slider .gallery .pages a.selected { background: #fff; }
 .page-product .primary-slider .gallery .pages a { border: 1px solid #fff; }
 
@@ -308,6 +308,17 @@ a:hover {text-decoration: none;}
 .product-information .in-stock { float: left; margin-right: 10px; }
 .product-information .sku { float: left; margin-right: 10px; }
 
+.advantages-scroll ul.tooltip-links,
+.advantages-scroll ul.tooltip-links li { margin: 0; }
+.advantages-scroll ul.tooltip-links li a.tip { position: relative; }
+.advantages-scroll ul.tooltip-links  li a.tip span { display: none; position: absolute; top:25px; left: -110px; width: 300px; padding: 10px; z-index: 100; background: #000; color: #fff; border-radius: 3px; -webkit-border-radius: 3px; font-size: 12px; }
+.advantages-scroll ul.tooltip-links  li a.tip span.b1 { background: #72acae; }
+.advantages-scroll ul.tooltip-links  li a.tip span.b2 { background: #a6b12e; }
+.advantages-scroll ul.tooltip-links  li a.tip span.b3 { background: #eeb424; }
+.advantages-scroll ul.tooltip-links  li a.tip span p { margin: 0; }
+.advantages-scroll ul.tooltip-links  li a:hover.tip { font-size: 99%; }
+.advantages-scroll ul.tooltip-links  li a:hover.tip span { display: block; }
+
 /***
  * Стили страницы спецпредложений (special-offers.php)
  ***/
@@ -344,6 +355,32 @@ a:hover {text-decoration: none;}
 .page-special-offers .content .product-list .holder .summary .more {text-decoration: none;}
 .page-special-offers .content .product-list .holder .summary .more span {border-bottom: 1px dotted;}
 .page-special-offers .content .product-list .holder .summary .more:hover span {border-bottom: 0;}
+.page-special-offers .content .product-list .holder .products li .quickView {
+	display:none;
+	position: absolute; 
+	cursor: pointer; 
+	margin-top: 120px;
+	margin-left: 55px;
+	background-color: #66786d;
+	padding: 15px 25px 15px 55px;
+	color: #fff;
+	font-size: 14px;
+	background-image: url('../images/icon-quick.png');
+	background-repeat: no-repeat;
+	background-position: 25px center;
+	opacity: 0.9;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+.page-special-offers .content .product-list .holder .products li .areaQuickView{
+	
+}
+.page-special-offers .content .product-list .holder .products li .areaQuickView:hover .quickView {
+	display:block; 
+}
 
 
 /***
@@ -652,9 +689,10 @@ html>body* { font: 300 13px Arial, sans-serif; }
 
 #popup{ position: relative; }
 #popup .block .close{ position: absolute; top: 16px; right: 16px; width: 16px; height: 16px; cursor: pointer; background: url('../images/icon-close.png') no-repeat; }
-#popup .block{ position: fixed; margin: 0 auto; top: 200px; left: 300px; width: 524px; background-color: #fff; z-index: 1001; padding: 40px; }
+#popup .block{ position: fixed; margin: 0 auto; top: 200px; left: 300px; width: 524px; background-color: #fff; z-index: 10001; padding: 40px; }
 #popup .block .heading{ font-size: 24px; padding-bottom: 25px; }
 #popup .block .text{ padding-bottom: 25px; }
+#popup .quickorder input[type="text"]{ width: 95%; }
 #popup .block input[type="text"]{ border:none; padding: 15px; border-bottom: 1px solid #807860; text-align: center; font-size:16px; }
 #popup .block input[type="submit"]{ display: block; margin: 25px auto 0; width: 190px; border:none; padding: 15px; text-align: center; background-color: #66786d; color: #fff; font-size: 18px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 #popup .overlay{ position: fixed; opacity: 0.6; height:100%; width:100%; background-color: #7b6c3d; z-index: 1000; }
@@ -682,4 +720,7 @@ html>body* { font: 300 13px Arial, sans-serif; }
 #popup .addCart.block p.text{ padding-bottom: 45px; }
 #popup .addCart.block a.addOrder{ border:none; padding: 10px 15px; text-align: center; background-color: #66786d; color: #fff; font-size: 18px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; text-decoration: none; margin: 0 25px 0 0;}
 #popup .addCart.block a.noAddOrder{font-size: 14px; text-decoration: none; border-bottom: 1px dotted;}
->>>>>>> origin/update-20140729
+
+/* Custom slider block styles */
+#popup .slider { position: fixed; margin: 0; left: 0!important; width: 100%!important; background-color: #fff; z-index: 10001; padding: 0; }
+#popup .imagebox img { width:100%; }

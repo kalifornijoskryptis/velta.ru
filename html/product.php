@@ -29,6 +29,123 @@
 
 </head>
 <body class="page-product">
+<div id="popup">
+	<div class="overlay" style="display:none;"></div>
+	<div class="addCart block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Ваш товар в корзине!</p>
+			<p class="text">Ваш товар был добавлен в корзину!<br>Желаете оформить заказ или продолжить совершать покупки в магазине?</p>
+			<a class="addOrder" href="/order/add_order.html">К оформлению заказа</a>
+			<a class="noAddOrder" href="#" onclick="return false;">Продолжить покупки</a>
+	</div>
+	<div class="qview block" style="display: none;">
+			<div class="close"></div>
+			<div class="left">
+				<img id="quick_pic" src="content/chair1.jpg">
+			</div>
+			<div class="right">
+				<div class="heading">Офисное кресло «Мадрид»</div>
+				<div class="more_info">
+					<span class="rating"></span>
+					<span class="availability out">Наличие: под заказ</span>
+					<span class="item_id">Артикул: 19</span>
+				</div>
+				<div class="text">Офисное кресло «Мадрид»</div>
+				<div class="price">
+					<span class="old_price">12&nbsp;390&nbsp;руб</span>
+					<span class="price">15&nbsp;000&nbsp;руб</span>
+				</div>
+				<div class="add_cart">
+					<form>
+        				<input id="qty" type="text" name="" value="1"><button class="submit" type="submit">Добавить в корзину</button>
+    				</form>
+				</div>
+			</div>
+	</div>
+	<div class="imagebox block" style="display:none;">
+			<div class="close"></div>
+			<img src="content/chair9.jpg">
+	</div>
+	<div class="callme block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Мы вам перезвоним!</p>
+			<p class="text">Мы рады, что вы заинтересованы в наших товарах и услугах. Пожалуйста, укажите ваше имя и номер телефона, мы вам перезвоним!</p>
+			<div class="form">
+				<input type="text" class="name" placeholder="Моё имя">
+				<input type="text" class="phone" placeholder="Мой номер телефона">
+				<input type="submit" value="Перезвоните мне" class="button"/>
+			</div>
+	</div>
+	<div class="textbox block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Радуем выбором!</p>
+			<p class="text">С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины с роликами даст возможность свободно передвигаться в границах своей рабочей зоны и брать необходимые вам документы, а также вы можете индивидуально отрегулировать высоту стула. 
+			<br/><br/>
+			Прообразы современных кресел появились ещё в Древнем Египте и Месопотамии. При археологических раскопках на территории Месопотамии был обнаружен штандарт войны и мира, на котором мозаикой выложена сцена пиршества шумеров (III тысячелетие до н. э.). На этой сценке знатные гости сидят на невысоких церемониальных креслах. Спинка кресла достигала плеч сидевшего человека. Ножки кресла вырезаны в виде ног копытного животного, а с каждого бока между передней и задней ножками вставлены по две распорки, поддерживавшие сидение снизу.</p>
+	</div>
+	<div class="quickorder block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Быстрый заказ одной кнопкой!</p>
+			<p class="text">Мы рады, что вы заинтересованы нашим товаром Офисное кресло «Новый стиль» за 9500 руб. Введите ниже ваш телефон для оформления заказа, наш менеджер вам перезвонит.</p>
+			<div class="form">
+				<input type="text" class="phone" placeholder="Мой номер телефона">
+				<input type="submit" value="Заказать в 1 клик!" class="button"/>
+			</div>
+	</div>
+	<div class="slider block" style="display:none;">
+		<div class="close"></div>
+		<div class="primary-slider">
+		  <div class="gallery">
+		   <div class="slides" id="primary-slider">
+			<div class="slide">
+				<img src="content/slide1.jpg" alt="" />
+			</div>
+			<div class="slide">
+				<img src="content/slide2.jpg" alt="" />
+			</div>
+			<div class="slide">
+				<img src="content/slide3.jpg" alt="" />
+			</div>
+			<div class="slide">
+				<img src="content/slide4.jpg" alt="" />
+			</div>
+			<div class="slide">
+				<img src="content/slide5.jpg" alt="" />
+			</div>
+		   </div> <!--//.slides//-->
+		  <div class="clear"></div>
+		  <div class="pages"></div>
+		  <a href="#" id="primary-slider-prev" class="nav nav-prev"></a>
+		  <a href="#" id="primary-slider-next" class="nav nav-next"></a>
+		 </div> <!--//.gallery//-->
+		</div>
+	</div>
+	<div class="addreview block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Оставьте свой отзыв</p>
+			<p class="text">Мы надеемся, что у вас остались только положительные эмоции от покупок и обслуживания в нашем магазине. Заполните необходимые поля, чтобы оставить отзыв.</p>
+			<div class="form">
+				<input type="text" class="name" placeholder="Как вас зовут">
+				<input type="text" class="email" placeholder="Ваша электронная почта">
+				<textarea class="textarea" data-myholder="Ваш отзыв о работе нашего магазина. Напишите о 
+качестве товара, скорости доставки и уровне 
+обслуживания. Спасибо, что делаете покупки у нас!"></textarea>
+				<input type="submit" class="button"/>
+			</div>
+	</div>
+	<div class="map1 block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Салон в ТЦ «Снегири»</p>
+			<p class="text">Московская область (направление — Волоколамское шоссе), п. Снегири, ул. Московская, д. 12, ТЦ «Снегири»<br><br>+7 (495) 225 4553, +7 (905) 563 6611<br>velta@tc-snegiri.ru</p>
+			<img src="images/mapYa.png">
+	</div>
+	<div class="map2 block" style="display:none;">
+			<div class="close"></div>
+			<p class="heading">Салон на Соколинке</p>
+			<p class="text">105118, Москва, 9-я улица Соколиной горы, дом 21<br><br>+7 (495) 225 4553<br>+7 (495) 365 3617</p>
+			<img src="images/mapYa.png">
+	</div>
+</div>
 <header class="page-header">
 	<div class="logo-holder">
 		<a href="#" class="logo">Велта Мебель</a>
@@ -92,31 +209,6 @@
 			</ul>
 		</div> <!--//.wrapper//-->
 	</nav> <!--//.catmenu//-->
-	
-	<div class="gallery">
-		<div class="slides" id="primary-slider">
-			<div class="slide">
-				<img src="content/slide1.jpg" alt="" />
-			</div>
-			<div class="slide">
-				<img src="content/slide2.jpg" alt="" />
-			</div>
-			<div class="slide">
-				<img src="content/slide3.jpg" alt="" />
-			</div>
-			<div class="slide">
-				<img src="content/slide4.jpg" alt="" />
-			</div>
-			<div class="slide">
-				<img src="content/slide5.jpg" alt="" />
-			</div>
-		</div> <!--//.slides//-->
-		<div class="clear"></div>
-		<div class="pages"></div>
-		<a href="#" id="primary-slider-prev" class="nav nav-prev"></a>
-		<a href="#" id="primary-slider-next" class="nav nav-next"></a>
-	</div> <!--//.gallery//-->
-	
 </div> <!--//.primary-slider//-->
 
 <div class="content">
@@ -124,12 +216,13 @@
   
 	<div class="block product-photo">
 			<ul class="bxslider">
-			<li><img src="content/chair-slide1.jpg"></li>
-			<li><img src="content/chair-slide2.jpg"></li>
-			<li><img src="content/chair-slide3.jpg"></li>
+			<li><a href="#" class="imagebox popup" data-popup="imagebox"><img src="content/chair-slide1.jpg"></a></li>
+			<li><a href="#" class="imagebox popup" data-popup="imagebox"><img src="content/chair-slide2.jpg"></a></li>
+			<li><a href="#" class="imagebox popup" data-popup="imagebox"><img src="content/chair-slide3.jpg"></a></li>
 		</ul>
 		<div class="bxlinks">
-			<a class="quick-order" href="#">Быстрый заказ</a> <a class="show-in-interior" href="#">Показать в интерьере</a>
+			<a class="quick-order quickorder popup" data-popup="quickorder" href="#">Быстрый заказ</a>
+			<a class="show-in-interior slider popup" data-popup="slider" href="#">Показать в интерьере</a>
 		</div>
 		<div id="bx-pager">
 			<a class="thumbnail" data-slide-index="0"><img src="content/chair-slide1.jpg"></a>
@@ -155,7 +248,7 @@
 			<li><a href="#" class="tip">Гарантия и возврат<span>Наша компания гарантирует вам, что все товары можно вернуть в течение 14 дней с момента покупки по гарантии.</span></a></li>
 		</ul>
 		<p>С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. </p>
-		<p>Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины с роликами даст возможность свободно передвигаться в границах своей рабочей зоны и брать необходимые вам документы, а также вы можете индивидуально отрегулировать высоту стула. <a class="show-all" href="#char-tabs">Показать все</a></p>
+		<p>Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины с роликами даст возможность свободно передвигаться в границах своей рабочей зоны и брать необходимые вам документы, а также вы можете индивидуально отрегулировать высоту стула. <a class="scroll" href="#char-tabs">Показать все</a></p>
 		<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir" data-yashareTheme="counter"></div> 
 	</div>
 	
@@ -176,10 +269,10 @@
 		<p class="coupon">Для гарантии цены интернет-магазина <a href="#">распечатайте купон</a></p>
 	  </div>
 	  <div class="advantages-scroll">
-		<ul>
-			<li><a class="b1" href="#">Все и сразу</a></li>
-			<li><a class="b2" href="#">Радуем ценами</a></li>
-			<li class="last"><a class="b3" href="#">Радуем выбором</a></li>
+		<ul class="tooltip-links">
+			<li><a class="b1 tip textbox popup" data-popup="textbox" href="#">Все и сразу<span class="b1"><p>Склад-магазин в одном месте в Москве, удобная парковка, бесплатная загрузка и разгрузка.</p></span></a></li>
+			<li><a class="b2 tip textbox popup" data-popup="textbox" href="#">Радуем ценами<span class="b2"><p>Наш магазин работает на рынке с 1979 года. Более 528 700 довольных обслуживанием и ценами клиентов.</p></span></a></li>
+			<li class="last"><a class="b3 tip textbox popup" data-popup="textbox" href="#">Радуем выбором<span class="b3"><p>50 фабрик в одном месте. Приезжайте, смотрите, выбирайте и покупайте нашу мебель.</p></span></a></li>
 		</ul>
 	  </div>
 	</div>
@@ -295,13 +388,13 @@
 				<p>105118, Москва, 9-я улица Соколиной горы, дом 21</p>
 				<p>+7 (495) 225 4553</p>
 				<p>+7 (495) 365 3617</p>
-				<center><img src="content/tempmap.png"></center>
+				<center><img src="images/mapYa.png"></center>
 			</div>
 			<div>
 				<h3 class="title" style="display:none;">Сертификаты</h3>
 				<h3>Мы официальные поставщики товара Офисное кресло «Новый стиль»</h3>
 				<p>Мы производим прямые поставки товара Офисное кресло «Новый стиль» напрямую с завода по самым привлекательным ценам. Ознакомьтесь с заводскими сертификатами на товар ниже. При нажатии на фотографию, сертификат откроется в полном размере.</p>
-				<center><img src="content/cert1.jpg"><img src="content/cert2.jpg"></center>
+				<center><a class="imagebox popup" data-popup="imagebox" href="#"><img src="content/cert1.jpg"><img src="content/cert2.jpg"></a></center>
 			</div>
 		</div>
 	</div>
@@ -348,26 +441,38 @@
 				<div class="gallery">
 					<ul class="carousel">
 						<li>
-							<img src="content/chair1.jpg" class="photo" alt="" />
-							<p class="title">Офисное кресло &laquo;Мадрид&raquo;</p>
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair1.jpg" class="photo" alt="" />			
+		   					</div>
+							<p class="title">Офисное кресло «Мадрид»</p>
 							<p class="price">15000 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair2.jpg" class="photo" alt="" />
-							<p class="title">Офисное кресло &laquo;Калифорния&raquo;</p>
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair2.jpg" class="photo" alt="" />			
+		   					</div>
+							<p class="title">Офисное кресло «Калифорния»</p>
 							<p class="price">27000 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair3.jpg" class="photo" alt="" />
-							<p class="title">Офисное кресло &laquo;Валенсия&raquo;</p>
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair3.jpg" class="photo" alt="" />			
+		   					</div>
+							<p class="title">Офисное кресло «Валенсия»</p>
 							<p class="price"><s>13500 р.</s> 9500 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
 						<li>
-							<img src="content/chair4.jpg" class="photo" alt="" />
-							<p class="title">Офисное кресло &laquo;Алабама&raquo;</p>
+							<div class="areaQuickView">
+		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
+								<img src="content/chair4.jpg" class="photo" alt="" />			
+		   					</div>
+							<p class="title">Офисное кресло «Алабама»</p>
 							<p class="price">11500 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
@@ -377,7 +482,8 @@
 					<a href="#" class="nav nav-next"></a>
 				</div> <!--//.gallery//-->
 				<div class="summary">
-					<a href="#" class="more">+ <span>показать все 15 товаров</span></a>
+					<a href="#" class="more off">+ <span>показать все 15 товаров</span></a>
+					<a href="#" class="more on" style="display: none;">- <span>спрятать все  15 товаров</span></a>
 				</div>
 			</div> <!--//#best1//-->
 			<div id="best2" class="best-deals-gallery hidden">
