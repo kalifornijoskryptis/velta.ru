@@ -271,8 +271,8 @@
 	  <div class="advantages-scroll">
 		<ul class="tooltip-links">
 			<li><a class="b1 tip textbox popup" data-popup="textbox" href="#">Все и сразу<span class="b1"><p>Склад-магазин в одном месте в Москве, удобная парковка, бесплатная загрузка и разгрузка.</p></span></a></li>
-			<li><a class="b2 tip textbox popup" data-popup="textbox" href="#">Радуем ценами<span class="b2"><p>Наш магазин работает на рынке с 1979 года. Более 528 700 довольных обслуживанием и ценами клиентов.</p></span></a></li>
-			<li class="last"><a class="b3 tip textbox popup" data-popup="textbox" href="#">Радуем выбором<span class="b3"><p>50 фабрик в одном месте. Приезжайте, смотрите, выбирайте и покупайте нашу мебель.</p></span></a></li>
+			<li><a class="b2 tip textbox popup" data-popup="textbox" href="#">Лучшие цены<span class="b2"><p>Наш магазин работает на рынке с 1979 года. Более 528 700 довольных обслуживанием и ценами клиентов.</p></span></a></li>
+			<li class="last"><a class="b3 tip textbox popup" data-popup="textbox" href="#">Огромный выбор<span class="b3"><p>50 фабрик в одном месте. Приезжайте, смотрите, выбирайте и покупайте нашу мебель.</p></span></a></li>
 		</ul>
 	  </div>
 	</div>

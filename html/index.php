@@ -240,9 +240,9 @@ isBrowserIE = true;
 			<div class="item item2">
 				<span class="icon"></span>
 				<div class="content"><div class="text">
-					<p class="t">Радуем ценами</p>
-					— наш магазин работает на рынке с 1970 года<br />
-					— более 528 700 клиентов
+					<p class="t">Лучшие цены</p>
+					— наш магазин работает на рынке с 1979 года<br />
+					— более 528 700 довольных обслуживанием и ценами клиентов
 				</div></div>
 			</div> <!--//.item//-->
 			<div class="item item3">
