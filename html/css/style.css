@@ -329,33 +329,33 @@ a:hover {text-decoration: none;}
 .page-special-offers .content h1.title { background: url('../images/star.png') left no-repeat; text-indent: 35px; }
 .page-special-offers .content p.description { margin-bottom: 30px; }
 
-.page-special-offers .content .product-list {margin-bottom: 25px; padding: 25px 0; background: #fff;}
-.page-special-offers .content .product-list .holder {width: 960px; margin: 9px auto 0; padding: 0 0 20px 0; border: 1px solid #dbd2ba; border-radius: 2px;}
-.page-special-offers .content .product-list .holder .products li {float: left; width: 300px; padding: 20px 10px 0; font-size: 18px; line-height: 20px; text-align: center; height: 450px;}
-.page-special-offers .content .product-list .holder .products li.out-of-stock { opacity: 0.5;}
-.page-special-offers .content .product-list .holder .products li.out-of-stock .out { position: absolute; margin-top: 125px; width: 300px; }
-.page-special-offers .content .product-list .holder .products li.out-of-stock .out p { background: repeating-linear-gradient(-45deg, #fff, #fff 10px, #f2f2f2 10px, #f2f2f2 20px);
+.content .product-list {margin-bottom: 25px; padding: 25px 0; background: #fff;}
+.content .product-list .holder {width: 960px; margin: 9px auto 0; padding: 0 0 20px 0; border: 1px solid #dbd2ba; border-radius: 2px;}
+.content .product-list .holder .products li {float: left; width: 300px; padding: 20px 10px 0; font-size: 18px; line-height: 20px; text-align: center; height: 450px;}
+.content .product-list .holder .products li.out-of-stock { opacity: 0.5;}
+.content .product-list .holder .products li.out-of-stock .out { position: absolute; margin-top: 125px; width: 300px; }
+.content .product-list .holder .products li.out-of-stock .out p { background: repeating-linear-gradient(-45deg, #fff, #fff 10px, #f2f2f2 10px, #f2f2f2 20px);
  padding: 10px 0; border-radius: 3px; -webkit-border-radius: 3px; }
-.page-special-offers .content .product-list .holder .products li .photo {display: block; width: 300px; height: 300px;}
-.page-special-offers .content .product-list .holder .products li .title {margin-top: 30px; color: #66786d; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.page-special-offers .content .product-list .holder .products li .title a {text-decoration: none;}
-.page-special-offers .content .product-list .holder .products li .price {margin-top: 3px; color: #EC1F1F; font-size: 30px; }
-.page-special-offers .content .product-list .holder .products li .price s {color: #b7b7b7; font-size: 18px; }
-.page-special-offers .content .product-list .holder .products li .cart {margin-top: 15px; color: #97875a;}
-.page-special-offers .content .product-list .holder .products li .cart a {display: inline-block; padding-left: 40px; margin-left: -30px; line-height: 25px; color: #97875a; text-decoration: none; background: url('../images/best-to-cart.png') no-repeat left center;}
-.page-special-offers .content .product-list .holder .products li .cart a span {border-bottom: 1px dotted;}
-.page-special-offers .content .product-list .holder .products li .cart a:hover span {border-bottom: 0;}
-.page-special-offers .content .product-list .holder .gallery .nav-prev {left: 0; background-position: 0 0;}
-.page-special-offers .content .product-list .holder .gallery .nav-next {right: 0; background-position: -55px 0;}
-.page-special-offers .content .product-list .holder .gallery .nav-prev:hover {background-position: -110px 0;}
-.page-special-offers .content .product-list .holder .gallery .nav-next:hover {background-position: -165px 0;}
-.page-special-offers .content .product-list .holder .gallery .nav-prev:active {margin-top: 1px; background-position: -110px 0;}
-.page-special-offers .content .product-list .holder .gallery .nav-next:active {margin-top: 1px; background-position: -165px 0;}
-.page-special-offers .content .product-list .holder .summary {margin-top: 32px; font-size: 18px; color: #66786d; text-align: center;}
-.page-special-offers .content .product-list .holder .summary .more {text-decoration: none;}
-.page-special-offers .content .product-list .holder .summary .more span {border-bottom: 1px dotted;}
-.page-special-offers .content .product-list .holder .summary .more:hover span {border-bottom: 0;}
-.page-special-offers .content .product-list .holder .products li .quickView {
+.content .product-list .holder .products li .photo {display: block; width: 300px; height: 300px;}
+.content .product-list .holder .products li .title {margin-top: 30px; color: #66786d; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.content .product-list .holder .products li .title a {text-decoration: none;}
+.content .product-list .holder .products li .price {margin-top: 3px; color: #EC1F1F; font-size: 30px; }
+.content .product-list .holder .products li .price s {color: #b7b7b7; font-size: 18px; }
+.content .product-list .holder .products li .cart {margin-top: 15px; color: #97875a;}
+.content .product-list .holder .products li .cart a {display: inline-block; padding-left: 40px; margin-left: -30px; line-height: 25px; color: #97875a; text-decoration: none; background: url('../images/best-to-cart.png') no-repeat left center;}
+.content .product-list .holder .products li .cart a span {border-bottom: 1px dotted;}
+.content .product-list .holder .products li .cart a:hover span {border-bottom: 0;}
+.content .product-list .holder .gallery .nav-prev {left: 0; background-position: 0 0;}
+.content .product-list .holder .gallery .nav-next {right: 0; background-position: -55px 0;}
+.content .product-list .holder .gallery .nav-prev:hover {background-position: -110px 0;}
+.content .product-list .holder .gallery .nav-next:hover {background-position: -165px 0;}
+.content .product-list .holder .gallery .nav-prev:active {margin-top: 1px; background-position: -110px 0;}
+.content .product-list .holder .gallery .nav-next:active {margin-top: 1px; background-position: -165px 0;}
+.content .product-list .holder .summary {margin-top: 32px; font-size: 18px; color: #66786d; text-align: center;}
+.content .product-list .holder .summary .more {text-decoration: none;}
+.content .product-list .holder .summary .more span {border-bottom: 1px dotted;}
+.content .product-list .holder .summary .more:hover span {border-bottom: 0;}
+.content .product-list .holder .products li .quickView {
 	display:none;
 	position: absolute; 
 	cursor: pointer; 
@@ -375,12 +375,24 @@ a:hover {text-decoration: none;}
 	-o-border-radius: 3px;
 	border-radius: 3px;
 }
-.page-special-offers .content .product-list .holder .products li .areaQuickView{
+.content .product-list .holder .products li .areaQuickView{
 	
 }
-.page-special-offers .content .product-list .holder .products li .areaQuickView:hover .quickView {
+.content .product-list .holder .products li .areaQuickView:hover .quickView {
 	display:block; 
 }
+
+/***
+ * Стили страницы категорий (category.php)
+ ***/
+.page-category {}
+.page-category .sidebar { background: #fff; width: 200px; float: left; }
+.page-category .content p { margin-bottom: 0; }
+.page-category .content ul { text-indent: 0; }
+.page-category .content ul li:before { content: " "; }
+
+.page-category .content .product-list .holder { width: 650px; margin: 0;  }
+.page-category .content .product-list { float:left;  }
 
 
 /***
