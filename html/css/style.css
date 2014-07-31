@@ -386,12 +386,12 @@ a:hover {text-decoration: none;}
  * Стили страницы категорий (category.php)
  ***/
 .page-category {}
-.page-category .sidebar { background: #fff; width: 200px; float: left; }
+.page-category .sidebar { background: #fff; width: 250px; float: left; }
 .page-category .content p { margin-bottom: 0; }
 .page-category .content ul { text-indent: 0; }
 .page-category .content ul li:before { content: " "; }
 
-.page-category .content .product-list .holder { width: 650px; margin: 0;  }
+.page-category .content .product-list .holder { width: 705px; margin: 0;  }
 .page-category .content .product-list { float:left;  }
 
 
