@@ -6,6 +6,7 @@
 	<title>Велта Мебель</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/chosen.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/style-ie.css" type="text/css" media="screen, projection" /><![endif]-->
@@ -20,6 +21,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+	<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+	<script type="text/javascript" src="js/icheck.min.js"></script>
+	<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
 </head>
 <body class="page-category">
 <div id="popup">
@@ -157,16 +161,99 @@
 </div> <!--//.primary-slider//-->
 
 <div class="content">
-<div class="wrapper">
-<h1 class="title">Наши лучшие предложения</h1>
-<p class="description">Ознакомьтесь с нашими лучшими предложениями, большими скидками и последними новинками. Наш магазин рад предоставить вам широкий выбор ведущих мебельных производителей. Желаем хороших покупок.</p>
-</div>
-<div class="wrapper">
-<div class="sidebar">
-	test
-</div>
-<div class="product-list">
-		<div class="holder">
+  <div class="wrapper">
+   <div class="sidebar">
+	<div class="category block">
+	  <h3>Столы и стулья</h3>
+	  <ul>
+		<li><a href="#">Обеденные столы</a></li>
+		<li class="second-level first"><a href="#">Стулья и табуреты</a></li>
+			<li class="second-level active"><a href="#">Для дома</a></li>
+			<li class="second-level"><a href="#">Для офиса</a></li>
+			<li class="second-level"><a href="#">Для дачи</a></li>
+		<li><a href="#">Скамьи</a></li>
+		<li><a href="#">Уголки для кухни</a></li>
+		<li><a href="#">Журнальные столики</a></li>
+		<li><a href="#">Столы и стулья для террасы</a></li>
+	  </ul>
+	</div>
+	<div class="price-slider block">
+	  <h3>Стоимость</h3>
+	  <div id="priceslider"></div>
+	  <script>
+	  $("#priceslider").ionRangeSlider({
+		min: 2500, /* min price */
+		max: 27500, /* max price*/
+		type: 'double',
+		postfix: " p.",
+		maxPostfix: "+",
+		prettify: false,
+		hasGrid: true
+	  });
+	  </script>
+	</div>
+	<div class="filter block">
+	  <h3>Сортировать по</h3>
+	  <ul>
+		<li><a href="#">Название</a>
+			<input type="text" placeholder="Введите название">
+		</li>
+		<li><a href="#">Размеры (мм)</a>
+			<input type="text" placeholder="Введите размеры (ВхШхГ)">
+		</li>
+		<li><a href="#">Тип обивки</a>
+			<input type="checkbox"><label>Кожа</label>
+			<input type="checkbox" checked><label>Ткань</label>
+			<input type="checkbox"><label>Замша</label>
+			<input type="checkbox"><label>Велюр</label>
+			<input type="checkbox"><label>Вельвет</label>
+			<input type="checkbox" checked><label>Шинилл</label>
+			<input type="checkbox" checked><label>Флок</label>
+			<input type="checkbox"><label>Рогожка</label>
+			<input type="checkbox"><label>Букле</label>
+			<input type="checkbox"><label>Жаккард</label>
+			<input type="checkbox"><label>Гобелен</label> 
+		</li>
+		<li><a href="#">Производитель</a>
+			<select data-placeholder="Выберите производителя" style="width:100%;" multiple class="chosen-select">
+			  <option value="1">Альянс</option>
+			  <option value="2">Трим-М</option>
+			  <option value="3">Volvo</option>
+			  <option value="4">Audi</option>
+			  <option value="5">BMW</option>
+			</select>
+		</li>
+		<li><a href="#">Цвет</a>
+			<input type="checkbox"><label>Синий</label>
+			<input type="checkbox" checked><label>Ольха</label>
+			<input type="checkbox"><label>Береза</label>
+			<input type="checkbox"><label>Оранж</label>
+			<input type="checkbox" checked><label>Зеленый</label>
+			<input type="checkbox"><label>Черный</label>
+			<input type="checkbox"><label>Кирпич</label>
+			<input type="checkbox"><label>Белый</label>
+		</li>
+		<li><a href="#">Наличие в салонах</a>
+			<input type="checkbox" name="iCheck"><label>Товар в наличии в ТЦ «Снегири»</label>
+			<input type="checkbox" name="iCheck" checked><label>Товар в наличии на Соколинке</label>
+			<input type="checkbox" name="iCheck" checked><label>Товар не в наличии (под заказ)</label>
+		</li>
+	  </ul>
+	</div>
+	</div>
+	<div class="category-information">
+		<img src="content/cat-img.jpg">
+		<div class="textblock">
+		  <h1 class="title">Столы и стулья</h1>
+		  <p class="description">Ознакомьтесь с нашими лучшими предложениями, большими скидками и последними новинками. Наш магазин рад предоставить вам широкий выбор ведущих мебельных производителей. Желаем хороших покупок.</p>
+		</div>
+	</div>
+	<div class="category-sort">
+		<p>Сортировать по: <a href="#">цене</a></p><p>Показывать на странице: <a href="#">9 товаров</a></p>
+		<div class="display-mode"><a href="#"><img src="images/grid.png"></a><a href="#"><img src="images/list.png"></a></div>
+	</div>
+	<div class="product-list">
+			<div class="holder">
 					 <ul class="products">
 						<li>
 							<div class="areaQuickView">
@@ -231,22 +318,22 @@
 							<p class="price"><s>1800 р.</s> 900 р.</p>
 							<p class="cart"><a href="#"><span>В корзину</span></a></p>
 						</li>
-						<li>
-							<div class="areaQuickView">
-		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
-								<img src="content/chair3.jpg" class="photo" alt="" />			
-		   					</div>
-							<p class="title"><a href="#">Офисное кресло &laquo;Валенсия&raquo;</a></p>
-							<p class="price"><s>15800 р.</s> 12000 р.</p>
-							<p class="cart"><a href="#"><span>В корзину</span></a></p>
-						</li>
 					</ul>
 					<div class="clear"></div>
-		</div> <!--//.holder//-->
-</div> <!--//.best-deals//-->
-	</div> <!--//.wrapper//-->
+			</div> <!--//.holder//-->
+			<div class="pager">
+				<ul class="pages">
+					<a href="#"><li><</li></a>
+					<a href="#"><li>1</li></a>
+					<a href="#"><li class="active">2</li></a>
+					<a href="#"><li>3</li></a>
+					<a href="#"><li>></li></a>
+				</ul>
+			  </div>
+	 </div>
+	</div> <!--//.best-deals//-->
+  </div> <!--//.wrapper//-->
 </div>
-
 <div class="wrapper">
 	<div class="advantages">
 		<div class="items">
@@ -351,5 +438,24 @@
 		</div>
 	</div> <!--//.wrapper//-->
 </footer> <!--//.page-footer//-->
+<script>
+$(document).ready(function(){
+
+  $(".chosen-select").chosen();
+  
+  $('input').each(function(){
+    var self = $(this),
+      label = self.next(),
+      label_text = label.text();
+
+    label.remove();
+    self.iCheck({
+      checkboxClass: 'icheckbox_line',
+      radioClass: 'iradio_line',
+      insert: '<div class="icheck_line-icon"></div>' + label_text
+    });
+  });
+});
+</script>
 </body>
 </html>
