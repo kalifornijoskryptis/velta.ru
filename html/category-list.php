@@ -207,9 +207,9 @@
 		
 		<a class="sh-sizes" href="#">Размеры (см)</a>
 		<li class="filter-sizes">
-			<input class="sizes" type="number" placeholder="Ш" name="quantity" min="1" max="300"><label>Кожа</label>
-			<input class="sizes" type="number" placeholder="В" name="quantity" min="1" max="300"><label>Кожа</label>
-			<input class="sizes" type="number" placeholder="Г" name="quantity" min="1" max="300"><label>Кожа</label>
+			<input class="sizes" type="number" placeholder="Ш" name="quantity" min="1" max="300"><label></label>
+			<input class="sizes" type="number" placeholder="В" name="quantity" min="1" max="300"><label></label>
+			<input class="sizes" type="number" placeholder="Г" name="quantity" min="1" max="300"><label></label>
 		</li>
 	
 		<a class="sh-material-type" href="#">Тип обивки</a>
