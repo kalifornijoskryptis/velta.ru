@@ -271,71 +271,64 @@
 		<p>Сортировать по: <a href="#">цене</a></p><p>Показывать на странице: <a href="#">9 товаров</a></p>
 		<div class="display-mode"><a href="#"><img src="images/grid.png"></a><a href="#"><img src="images/list.png"></a></div>
 	</div>
-	<div class="product-list">
+	<div class="product-list-view">
 			<div class="holder">
 					 <ul class="products">
 						<li>
-							<div class="areaQuickView">
-		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
-								<img src="content/chair5.jpg" class="photo" alt="" />			
-		   					</div>
+							<a href="#"><img src="content/chair5.jpg" class="photo" alt="" /></a>
 							<p class="title"><a href="#">Офисное кресло &laquo;Функционал&raquo;</a></p>
+							<p class="description">С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины.</p>
 							<p class="price"><s>15800 р.</s> 12000 р.</p>
-							<p class="cart"><a href="#"><span>В корзину</span></a></p>
+							<p class="cart"><a href="#"><span><img src="images/best-to-cart.png">Добавить в корзину</span></a></p>
 						</li>
 						<li>
-							<div class="areaQuickView">
-		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
-								<img src="content/chair6.jpg" class="photo" alt="" />			
-		   					</div>
+							<a href="#"><img src="content/chair6.jpg" class="photo" alt="" /></a>
 							<p class="title"><a href="#">Офисное кресло &laquo;Барон&raquo;</a></p>
+							<p class="description">С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины.</p>
 							<p class="price"><s>35800 р.</s> 22000 р.</p>
-							<p class="cart"><a href="#"><span>В корзину</span></a></p>
+							<p class="cart"><a href="#"><span><img src="images/best-to-cart.png">Добавить в корзину</span></a></p>
 						</li>
 						<li class="out-of-stock">
-							<div class="out"><p>Нет в наличии (распродано)</p></div>
-							<img src="content/chair7.jpg" class="photo" alt="" />		
+							<a href="#"><img src="content/chair7.jpg" class="photo" alt="" /></a>
 							<p class="title"><a href="#">Офисное кресло &laquo;Менеджер 1&raquo;</a></p>
+							<p class="description">С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины.</p>
 							<p class="price"><s>5800 р.</s> 2000 р.</p>
+							<div class="out"><p>Нет в наличии (распродано)</p></div>
 						</li>
 						<li>
-							<div class="areaQuickView">
-		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
-								<img src="content/chair8.jpg" class="photo" alt="" />			
-		   					</div>
+							<a href="#"><img src="content/chair8.jpg" class="photo" alt="" /></a>
 							<p class="title"><a href="#">Офисное кресло &laquo;Царь&raquo;</a></p>
+							<p class="description">С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины.</p>
 							<p class="price"><s>45800 р.</s> 32250 р.</p>
-							<p class="cart"><a href="#"><span>В корзину</span></a></p>
+							<p class="cart"><a href="#"><span><img src="images/best-to-cart.png">Добавить в корзину</span></a></p>
 						</li>
 						<li class="out-of-stock">
-							<div class="out"><p>Нет в наличии (распродано)</p></div>
-							<img src="content/chair9.jpg" class="photo" alt="" />
+							<a href="#"><img src="content/chair9.jpg" class="photo" alt="" /></a>
 							<p class="title"><a href="#">Офисное кресло &laquo;Властелин&raquo;</a></p>
+							<p class="description">С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины.</p>
 							<p class="price"><s>75800 р.</s> 62010 р.</p>
+							<div class="out"><p>Нет в наличии (распродано)</p></div>
 						</li>
 						<li>
-							<div class="areaQuickView">
-		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
-								<img src="content/chair10.jpg" class="photo" alt="" />			
-		   					</div>
+							<a href="#"><img src="content/chair10.jpg" class="photo" alt="" /></a>
 							<p class="title"><a href="#">Офисное кресло &laquo;Император&raquo;</a></p>
+							<p class="description">С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины.</p>
 							<p class="price"><s>195800 р.</s> 182780 р.</p>
-							<p class="cart"><a href="#"><span>В корзину</span></a></p>
+							<p class="cart"><a href="#"><span><img src="images/best-to-cart.png">Добавить в корзину</span></a></p>
 						</li>
 						<li class="out-of-stock">
-							<div class="out"><p>Нет в наличии (распродано)</p></div>
-							<img src="content/chair11.jpg" class="photo" alt="" />
+							<a href="#"><img src="content/chair11.jpg" class="photo" alt="" /></a>
 							<p class="title"><a href="#">Офисное кресло &laquo;Бюрократ&raquo;</a></p>
+							<p class="description">С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины.</p>
 							<p class="price"><s>9800 р.</s> 9799 р.</p>
+							<div class="out"><p>Нет в наличии (распродано)</p></div>
 						</li>
 						<li>
-							<div class="areaQuickView">
-		   					<div class="quickView popup" data-popup="qview"><span>Быстрый просмотр</span></div>
-								<img src="content/chair12.jpg" class="photo" alt="" />			
-		   					</div>
+							<a href="#"><img src="content/chair12.jpg" class="photo" alt="" /></a>
 							<p class="title"><a href="#">Офисное кресло &laquo;Белоснежное&raquo;</a></p>
+							<p class="description">С офисным креслом Новый Стиль Comfort GTP Black работники вашего офиса будут чувствовать себя комфортно на протяжении всего рабочего дня. Эргономические параметры кресла Новый Стиль Comfort GTP Black не сковывают свободу ваших движений, а наличие крестовины.</p>
 							<p class="price"><s>1800 р.</s> 900 р.</p>
-							<p class="cart"><a href="#"><span>В корзину</span></a></p>
+							<p class="cart"><a href="#"><span><img src="images/best-to-cart.png">Добавить в корзину</span></a></p>
 						</li>
 					</ul>
 					<div class="clear"></div>

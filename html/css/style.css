@@ -359,6 +359,7 @@ a:hover {text-decoration: none;}
 .content .product-list .holder .products li .quickView { display:none; position: absolute;  cursor: pointer; margin-top: 120px; margin-left: 55px; background-color: #66786d; padding: 15px 25px 15px 55px; color: #fff; font-size: 14px; background-image: url('../images/icon-quick.png'); background-repeat: no-repeat; background-position: 25px center; opacity: 0.9; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 .content .product-list .holder .products li .areaQuickView{}
 .content .product-list .holder .products li .areaQuickView:hover .quickView {display:block;}
+.content .product-list-view .holder .products li .areaQuickView:hover .quickView {display:block;}
 
 /***
  * Стили страницы категорий (category.php)
@@ -366,6 +367,9 @@ a:hover {text-decoration: none;}
  
 .page-category {}
 .page-category .content {}
+.page-category .content p { margin-bottom: 0; }
+.page-category .content ul { text-indent: 0; }
+.page-category .content ul li:before { content: " "; }
 
 /* Sidebar */
 .page-category .sidebar { height: 100%; background: #fff; width: 250px; float: left; padding: 0; }
@@ -430,7 +434,12 @@ a:hover {text-decoration: none;}
 .page-category .sidebar .filter {}
 .page-category .sidebar .filter a { float: left; clear: both; text-decoration: none; width: 100%; margin-top: 20px; }
 .page-category .sidebar .filter ul li {  }
+.page-category .sidebar .filter .selected-filter{ background:#66786d; margin: 5px 0; height: 30px; color: #fff; padding: 10px 20px 0px 20px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; cursor: pointer; }
+.page-category .sidebar .filter .selected-filter:hover{ opacity:0.9; }
+.page-category .sidebar .filter .selected-filter img{ margin-right: 10px; }
+.page-category .sidebar .filter .selected-filter .delete{ float: left; }
 .page-category .sidebar .filter input { margin-top: 5px; width: 100%; border: 1px solid #dfdfdf; height: 35px; border-radius: 3px; -webkit-border-radius: 3px; text-indent: 10px; color: #dfdfdf; }
+.page-category .sidebar .filter input.sizes { width: 29%; }
 .page-category .sidebar .filter input:focus { color: #66786d; }
 .page-category .sidebar .filter input.filter-sizes { width: 33%; }
 .page-category .sidebar .filter .checkboxes { margin-top: 10px; }
@@ -470,8 +479,7 @@ a:hover {text-decoration: none;}
 .chosen-container-multi .chosen-choices { border: 1px solid #dfdfdf; -webkit-border-radius: 3px; border-radius: 3px; }
 .chosen-container-multi .chosen-choices li.search-field input[type="text"] { height: 25px; color: #dfdfdf; box-shadow: none; font-family: helvetica; }
 
-/* Products */
-.page-category .product-list { padding: 0; margin-top: 20px; }
+/* Sort and image block */
 .page-category .category-information { position: relative; float: left; }
 .page-category .category-sort { margin-top: 20px; float: left; }
 .page-category .category-sort p { float: left; margin-right: 35px; }
@@ -484,20 +492,40 @@ a:hover {text-decoration: none;}
 .page-category .category-information .textblock .title { font-size: 18px; color: #edddb1; margin-bottom: 0; z-index: 1;}
 .page-category .category-information .textblock .description { font-size: 11px; color: #b9b19b; }
 
-.page-category .content p { margin-bottom: 0; }
-.page-category .content ul { text-indent: 0; }
-.page-category .content ul li:before { content: " "; }
-
+/* Products grid */
+.page-category .product-list { padding: 0; margin-top: 20px; }
 .page-category .content .product-list .holder { width: 705px; margin: 0; background: #fff; }
 .page-category .content .product-list .holder ul.products { margin-left: 35px; }
 .page-category .content .product-list { float:left; background: none; }
 .page-category .content .product-list .holder .products li .price {margin-top: 3px; color: #97875a; font-size: 18px; }
 .page-category .content .product-list .holder .products li .price s {color: #b7b7b7; font-size: 16px; }
+
+/* Products list */
+.page-category .content .product-list-view { padding: 0; margin-bottom: 20px; }
+.page-category .content .product-list-view .holder { width: 705px; margin: 0; background: #fff; }
+.page-category .content .product-list-view .holder ul.products { margin-left: 35px; }
+.page-category .content .product-list-view { float:left; background: none; }
+.page-category .content .product-list-view .holder ul.products li { width: 100%; float: left; clear: right; margin: 10px 0; }
+.page-category .content .product-list-view .holder ul.products li.out-of-stock { opacity: 0.6; }
+.page-category .content .product-list-view .holder ul.products li.out-of-stock .out { font-size: 18px; top: 8px; position: relative; }
+.page-category .content .product-list-view .holder ul.products li img { float: left; width: 230px; height: 230px;  }
+.page-category .content .product-list-view .holder ul.products .title{ font-size: 24px; margin: 20px 0px; }
+.page-category .content .product-list-view .holder ul.products .title a{ text-decoration:none; }
+.page-category .content .product-list-view .holder ul.products .description { color: #807860; margin-bottom:15px; }
+.page-category .content .product-list-view .holder .products li .price {margin-top: 3px; color: #97875a; font-size: 24px; float: left; margin-right: 20px; }
+.page-category .content .product-list-view .holder .products li .price s {color: #b7b7b7; font-size: 16px; }
+.page-category .content .product-list-view .holder .products li .cart { font-size: 18px; float: left; }
+.page-category .content .product-list-view .holder .products li .cart img { width: auto; height: auto; margin-right:5px; }
+.page-category .content .product-list-view .holder .products li .cart a { text-decoration: none; color:#97875a; }
+.page-category .content .product-list-view .holder .products li .cart span { top: 5px; position: relative; border-bottom: 1px dotted #97875a; }
+.page-category .content .product-list-view .holder .products li .cart span:hover { border-bottom: none; }
+
+/* Pager */
+.page-category .content .pager { margin: 20px 0; }
 .page-category .content .pager ul li { float: left; border: 1px solid #66786d; padding: 10px 14px; margin-left: 10px; -moz-border-radius: 3px; border-radius: 3px; }
 .page-category .content .pager ul li.active,
 .page-category .content .pager ul li:hover { background: #66786d; color: #fff; }
 .page-category .content .pager ul.pages { width: 100%; margin: 10px 30%; }
-
 
 /***
  * Шапка

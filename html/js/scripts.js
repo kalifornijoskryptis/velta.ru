@@ -226,7 +226,39 @@ jQuery(document).ready(function($){
 		$('#popup .block').hide(100);
 		$('#popup .overlay').hide();
 	});
-		
+	
+	/* Filter show-hide functions */
+	$(".filter a.sh-name").on('click',function(e){
+            $('.filter ul li.filter-name').toggle(100);
+            return false;
+    });
+	$(".filter a.sh-sizes").on('click',function(e){
+            $('.filter ul li.filter-sizes').toggle(100);
+            return false;
+    });
+	$(".filter a.sh-material-type").on('click',function(e){
+            $('.filter ul li.filter-material-type').toggle(100);
+            return false;
+    });
+	$(".filter a.sh-manufacture").on('click',function(e){
+            $('.filter ul li.filter-manufacture').toggle(100);
+            return false;
+    });
+	$(".filter a.sh-color").on('click',function(e){
+            $('.filter ul li.filter-color').toggle(100);
+            return false;
+    });
+	$(".filter a.sh-stocks").on('click',function(e){
+            $('.filter ul li.filter-stocks').toggle(100);
+            return false;
+    });
+	
+	/* Remove selecter attr */
+	$(".filter .selected-filter").on('click',function(e){
+            $(this).toggle(100);
+            return false;
+    });
+	
 })
 
 $(window).load(function(){
